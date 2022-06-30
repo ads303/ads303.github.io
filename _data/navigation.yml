@@ -1,0 +1,25 @@
+# main links links
+main:
+  - title: "Research"
+    url: /research/
+ 
+  - title: "Other Passions"
+    url: /passions/    
+
+  - title: "Photography"
+    url: /pictures/    
+    
+  - title: "Reading"
+    url: /reading/
+    
+  - title: "Papers I've Read"
+    url: /papers/
+    
+  - title: "Papers to Read"
+    url: /paperstoread/
+        
+  - title: "Blog"
+    url: /year-archive/
+
+  - title: "CV"
+    url: /cv/
