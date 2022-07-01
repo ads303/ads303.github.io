@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "CV - Aditya Sriram"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -13,136 +13,131 @@ redirect_from:
 Education
 ======
 
-Medical Scientist Training Program (MD-PhD), Stanford University School of Medicine ('22-'31)
+**PhD Student**, Human Genetics**, University of Pittsburgh (2022-2026)
 
-BS in Microbiology, Immunology, and Molecular Genetics, University of California, Los Angeles (12/20)
+**M.S.**, Genetic Epidemiology, University of Washington (Seattle) - completed June 2022
   
-  * *Summa Cum Laude* and Departmental Honors	
+  * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations* 
+
+**B.S.**, Genetics and Genommics, University of California Davis - completed March 2020
+**Minor**, Statistics, University of California Davis - completed March 2020
     
-  * Departmental Honors Thesis: *A Systems-Level Analysis of Common Variable Immunodeficiency* 
-
-Research
+Graduate-level Research
 ======
 
-* **Butte Lab**  
-  *Undergraduate Researcher* 
+* **Park Lab - Dept. of Human Genetics @Pitt**  
+  ***PhD Student***
   
-  February 2018-April 2022
+  Start Date: May 2022
   
-  *Common Variable Immunodeficiency*
-  * Utilized Cytometry by Time of Flight (CyTOF) as a methodology to establish functional cellular differences in patients     with CVID
-  * Optimized assay to measure phospho-protein levels in immunodeficiency patients
-  * Creating a novel 2-component Gaussian Mixture Model methodology to analyze CyTOF signaling data
-  * Making machine learning models to correlate signaling, exome data with clinical phenotype in CVID
+  *Sepsis Genetics and Causal Factors*
+  * Using machine learning and causal inference methods to determine causal factors for sepsis
+  * UKB and NHANES datasets utilized
   
-  *Candidate Variants for Inborn Errors of Immunity*
-  * Utilized the OmniPath meta-database to find variants functionally related to known IEI genes
-  * Produced comprehensive list of IEI-related genes for novel IEI gene discovery in the clinic
-  * Creating an R Shiny Webapp to functionalize variants filtering for clinicians
-  
-  *Adducin and CD4 T Cell Costimulation*
-  
-  * Utilized confocal microscopy and ImageJ to link the actin capping protein Alpha-Adducin to CD4 T-cell 
-    costimulation
-  * Used R to fit logistic regression curves for dose-responsive T-cell proliferation curves
-  
-  *Basophil Activation Test*
-  
-  * Worked to optimize a high-throughput assay to diagnose allergy
-  * Mentored a high school student in the summer of 2018
-  
-*  **Bruins in Genomics Summer Research Fellowship**	             	       
-   *Undergraduate Researcher*
+*  **Ha Lab - Fred Hutchinson Cancer Center @UW**	             	       
+   ***Graduate Rotation Student***
    
-   June 2020-Present
+   January 2021 - December 2021
+   *Principal Investigator: Dr. Gavin Ha | Project Mentor: Dr. Gavin Ha*
 
-   * Received $4,000 stipend to fund and continue data science work on CVID 
-   * Presented at the Systems Biology journal club
-   * Created novel SIR model for COVID-19 Forecasting Hackathon 
+   * Gene expression analysis of circulating tumor DNA from pediatric neuroblastoma
+   * Collaboration with Dr. Brian Crompton, Dana-Farber Cancer Institute
+   * Identified target transcription factor binding sites of interest in Neuroblastoma genetic pathways
+   * [Ha Lab Project Recap](https://docs.google.com/presentation/d/1D8eAk3np1AYlfoIxhU6HebP2lrm6zbjKtrM2FUeLgAk/edit?usp=sharing)
 
-Volunteering and Service
+*  **Master's Thesis Research @UW**	             	       
+   ***Graduate Student***
+   
+   January 2021 - December 2021
+   *Principal Investigator: Dr. Gavin Ha | Project Mentor: Dr. Gavin Ha*
+
+   * Gene expression analysis of circulating tumor DNA from pediatric neuroblastoma
+   * Collaboration with Dr. Brian Crompton, Dana-Farber Cancer Institute
+   * Identified target transcription factor binding sites of interest in Neuroblastoma genetic pathways
+   * [Ha Lab Project Recap](https://docs.google.com/presentation/d/1D8eAk3np1AYlfoIxhU6HebP2lrm6zbjKtrM2FUeLgAk/edit?usp=sharing)
+
+*  **Center for Cerebrovascular Research @UCSF Parnassus Campus**	             	       
+   ***Research Intern***
+   
+   June 2021 - March 2022
+   *Principal Investigator: Dr. Helen Kim | Project Mentors: Dr. Shantel Weinsheimer and Dr. Helen Kim*
+
+   * Studied the genetic basis for Familial Cerebral Cavernous Malformation (CCM) progression
+   * Conducted over-representation analysis using GWAS results for enriched biological pathways
+   * [Abstract for a talk given @International Stroke Conference 2022](https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109)
+
+*  **Weiss Lab @UCSF Weill Institute for Neurosciences**	             	       
+   ***Research Intern***
+   
+   June 2021 - September 2021
+   *Principal Investigator: Dr. Lauren Weiss | Project Mentor: Dr. Michela Traglia*
+
+   * Investigated hypothesis that maternal asthma can be a predictor of autism in children
+   * Worked extensively with polygenic risk scores and using risk scores as a metric for disease prediction and subsequent prevention
+   * [Weiss Lab Project Recap](https://docs.google.com/presentation/d/1fYRmhYW8Z_GHGjeQVmNM36HHPqEY2rhZcEMnvBsFHBw/edit?usp=sharing)
+
+Undergraduate-level Research
 ======
 
-* **TheXperiment**
-
-  *Mentor, Marketing Chair ('18-'19), Treasurer ('19-'20), and Post-Grad Advisor ('20-'21)*
+* **Dennis Lab - Human Genomics, Evolution, and Disease Genetics @UC Davis**  
+  ***Undergraduate Researcher***
   
-  June 2017-Present
+  July 2018 - July 2020
+  *Principal Investigator: Dr. Megan Dennis | Project Mentor: Dr. Alexandra Colon-Rodriguez
   
-  * Personally mentored 30+ underserved children one-on-one in scientific topics of their interests
-  * Garnered over $10,000 in funding for students' projects and club maintenance
-  * Coordinated three city-wide science fairs
-  * Revamped organization website
-  * Coordinated site visits of 75+ mentors and 100+ mentees
-  
+  * Investigated molecular and behavioral characteristics of Autism Spectrum Disorder and studied epilepsy target genes
+  * Used Zebrafish as a model organism for all studies
+  * Tasks included: Zebrafish genotyping, PAGE-gel preparation and characterization of Zebrafish variants, qPCR and Melt Curve data analysis, primer design for both standard PCR and qPCR assays, microinjections of Zebrafish with fluorescent markers to study gene function and developmental processes
+  * [Research Poster - 2019](https://drive.google.com/file/d/1oihfUccdz91x5ctHMu1rMXk-PtyxO0FX/view?usp=sharing)
+  * [Frontiers Publication - 2020](https://www.frontiersin.org/articles/10.3389/fcell.2020.586296/full)
 
-* **Assessing Residents’ CI-CARE**
-  
-  *Volunteer ('17-'19) and General Surgery/Urology Department Lead ('19-'20)*
-
-  September 2017-June 2020
-
-  * Surveyed General Surgery and Head and Neck Surgery patients for satisfaction with their residents
-  * Spearheaded a project to increase efficiency by digitizing surveying
-  * Led a group of five volunteers to analyze data to assess resident physician communication scores
-  * Affiliated as organization photographer, research associate, social media director, and website editor
-
-* **Irvington High School Alumni Mentor**
-
-  September 2018-Present
-
-  * Guiding students of my former high school with extracurriculars, college admissions, and life advice 
-  * Gave talk to parents regarding supporting their children during the admissions cycle
-  
-Skills
+Volunteering and Teaching
 ======
-* R
-  * Libraries: tidyverse (purrr, ggplot2, dplyr), resample, ggbiplot, mixtools
-  * Some experience in package development
-* ImageJ/Fiji
-  * Experience developing macros for data processing 
-  * Comfortable with image analysis
-* Python
-  * Beginner skill level
-* C++
-  * Beginner skill level
+
+* **Statcom @UW**
+
+  *Volunteer*
   
+  January 2021 - June 2022
+  
+  * Statistical analysis consulting work for organizations around the greater Seattle area  
+
+* **Teaching Assistant for Dr. Alison Fohner @UW**
+  
+  *PHG401/BIOST401 - Computational and Applied Genetic Epidemiology*
+
+  March 2021 - June 2021
+
+* **Tutor @UW School of Public Health**
+
+  September 2021 - June 2022
+
+  * Assisted graduate and undergraduate students with statistics concepts, intro genetics courses, and epidemiology courses 
+  
+Technical Skills
+======
+* **Bioinformatics & Dry-Lab Methods** 
+  * Languages: R, Python, Unix/Command Line, PLINK
+  * Packages: ggplot2, tidyverse, dplyr, tensorflow/keras, Seurat(scRNA-seq visualization), Impute2, RShiny
+* **Benchwork & Wet-Lab Methods**
+  * PCR, qPCR, buffer preparation, SDS-PAGE gel preparation, electrophoresis, microinjections, primer design, bright-field microscopy, pipetting, flow cytometry, Nanodrop DNA quantification, DNA extraction, DNA/RNA sequencing protocols, Gibson Assembly Cloning methods
+    
 Publications
 ======
-**Khan HA**, Butte MJ (2021). Expanding the Potential Genes of Inborn Errors of Immunity through Protein Interactions. *In prep.*
+**Sriram, A.D.** (2022). Genetic risk factors associated with SARS-CoV-2 susceptibility in multiethnic populations. MedRxiv, 2022.06.23.22276797. [link](https://doi.org/10.1101/2022.06.23.22276797)
 
-Thauland TJ, **Khan HA**, Butte MJ (2019). The Actin-Capping Protein Alpha-Adducin Is Required for T-Cell Costimulation. Front. Immunol. 10:2706. [Link.](https://www.frontiersin.org/articles/10.3389/fimmu.2019.02706/full)
+Colón-Rodríguez, A., Uribe-Salazar, J. M., Weyenberg, K. B., **Sriram, A.**, Quezada, A., Kaya, G., Jao, E., Radke, B., Lein, P. J., Dennis, M. Y., (2020). Assessment of Autism Zebrafish Mutant Models Using a High-Throughput Larval Phenotyping Platform. Frontiers in Cell and Developmental Biology, 8. [link](https://www.frontiersin.org/article/10.3389/fcell.2020.586296)
 
-Posters and Abstracts
+Abstracts and Posters
 ======
-**Khan HA**, Thauland TJ, Garcia AJ, Butte MJ (2020). A Signaling and Phenotypic Analysis of Common Variable Immunodeficiency Patients through Mass Cytometry. Journal of Clinical Immunology. Supplement 1:S1 40 –S163. [Link.](https://cis.clinimmsoc.org/UserFiles/file/FINALAM20AbstractsJOCI.pdf)
+**Sriram, A.**, Weinsheimer, S., Nelson, J., Mabray, M., Zabramski, J. M., Akers, A., Hart, B., Morrison, L., McCulloch, C. E., Kim, H., (2022). Abstract 109: Biological Pathways Enriched For Genes Associated With Lesion Burden In Cerebral Cavernous Malformation. Stroke, (Suppl_1), A109–A109. [link](https://doi.org/10.1161/str.53.suppl_1.109) 
 
-**Khan HA**, Thauland TJ, Garcia AJ, Butte MJ. A Signaling and Phenotypic Analysis of Common Variable Immunodeficiency Patients through Mass Cytometry. Presented at MIMG Undergraduate Research Symposium; 2019 December 6; Los Angeles, Ca.
+**Sriram, A.**, Colón-Rodrigues, A., Dennis, M. Y. Morphological characterization of autism spectrum disorder mutations in zebrafish. Poster presented at UC Davis Undergraduate Research Conference, 2019; Davis, CA.       
 
-Ru K, **Khan H**, Neman S, Faith J, Moseley T, Dubey I, Ratnaparki, R, Lu O, Gonzalez L.  Comparing ACGME Core Competency Scores Between 1st and 3rd year Internal Medicine Residents at UCLA Health. Poster presented at UCLA Undergraduate Research Poster Day; 2019 May 21; Los Angeles, Ca.
-
-Soohoo A, **Khan H**, Cevallos N, Hankerson B, Lu O, Kim J, Gonzalez L, Mosley V.  An Assessment of Communication and Professionalism of Medical Residents at the Ronald Reagan UCLA Medical Center from 2015 to 2017. Poster presented at UCLA Undergraduate Research Poster Day; 2018 May 22; Los Angeles, Ca.
-
-Awards
+Relevant Academic Courses
 ======
-* Association of Biomedical Research Undergraduate Research Grant 
-  * Inaugural grant given on the basis of commitment to research
-  * Funded summer research of 2019
+Undergraduate Genetics and Genomics & Statistics Coursework 
+* Analysis of Variance, Regression Analysis, Genes and Gene Expression, Functional Genomics, Comparative Genomics, Human Genetics and Genomics, Mathematical Statistics I and II, Advanced Eukaryotic Genetics, Nonparametric Statistics
 
-* UCLA Chancellor's Service Award 					                                 
-  * Given to graduating students with an extraordinary commitment to service
-  
-* UCLA Dean's Honor List 
-  * All quarters
-
-* UCLA BIG Summer COVID-19 Hackathon Winner	   
-
-* BIG Summer Research Excellence Award	       
-
-Relevant Coursework
-======
-Undergraduate MIMG Coursework 
-* Nuclear Cell Biology, Biochemistry I, Microbiology, Virology, Microbial Genomics, Bioethics, Scientific Communication I/II, Immunology 
-
-Graduate Dual-Enrolled Classes 
-* Advanced Immunology, Algorithms in Bioinformatics 
+Graduate Genetic Epidemiology Coursework
+* R for Health Data, Applied Biostatistics I and II, Pharmacology and Toxicogenomics, Statistical Genetics I and II, Genetic Epidemiology, Biological Data Science, Neuroepidemiology, Advanced Human Genetics, Bioinformatics and Sequence Analysis
