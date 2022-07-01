@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Humza Ali Khan"
+title                    : "Aditya Sriram"
 title_separator          : "-"
-name                     : &name "Humza Ali Khan"
+name                     : &name "Aditya Sriram"
 description              : &description ""
-url                      : "https://humzalikhan.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://ads303.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "humzalikhan/humzalikhan.github.io"
+repository               : "ads303/ads303.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : humzalikhan
+  username               : djsriram98
 facebook:
   username               :
   app_id                 :
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Humza Ali Khan"
+  name             : "Aditya Sriram"
   avatar           : "HK_WebsiteProfile.jpg"
-  bio              : "Always learning about immunology and being a better person than yesterday"
-  location         : "SF Bay Area"
+  bio              : "A DNA strand was confused at work. One might say it was lagging behind."
+  location         : "Pittsburgh, PA"
   employer         : 
   pubmed           : 
   googlescholar    : 
-  email            : "humzakhan340 at g.ucla.edu"
+  email            : "ads303 at pitt.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "humzalikhan"
+  github           : "ads303"
   google_plus      :
   keybase          :
   instagram        :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : humzalikhan
+  twitter          : djsriram98
   vine             :
   weibo            :
   xing             :
