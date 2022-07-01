@@ -48,18 +48,19 @@ Graduate-level Research
 *  **Master's Thesis Research @UW**	             	       
    ***Graduate Student***
    
-   January 2021 - December 2021
-   *Principal Investigator: Dr. Gavin Ha | Project Mentor: Dr. Gavin Ha*
+   January 2021 - June 2022
+   
+   *Thesis Committee Chair: Dr. Kathleen Kerr | Thesis Committee Member: Dr. Bruce Weir*
 
-   * Gene expression analysis of circulating tumor DNA from pediatric neuroblastoma
-   * Collaboration with Dr. Brian Crompton, Dana-Farber Cancer Institute
-   * Identified target transcription factor binding sites of interest in Neuroblastoma genetic pathways
-   * [Ha Lab Project Recap](https://docs.google.com/presentation/d/1D8eAk3np1AYlfoIxhU6HebP2lrm6zbjKtrM2FUeLgAk/edit?usp=sharing)
+   * Investigated genetic components contributing to SARS-CoV-2 susceptibility
+   * Multiethnic population group, conducted genome-wide association study (GWAS)
+   * [Link to thesis on pre-print server](https://www.medrxiv.org/content/10.1101/2022.06.23.22276797v1.full-text)
 
 *  **Center for Cerebrovascular Research @UCSF Parnassus Campus**	             	       
    ***Research Intern***
    
    June 2021 - March 2022
+   
    *Principal Investigator: Dr. Helen Kim | Project Mentors: Dr. Shantel Weinsheimer and Dr. Helen Kim*
 
    * Studied the genetic basis for Familial Cerebral Cavernous Malformation (CCM) progression
@@ -70,6 +71,7 @@ Graduate-level Research
    ***Research Intern***
    
    June 2021 - September 2021
+   
    *Principal Investigator: Dr. Lauren Weiss | Project Mentor: Dr. Michela Traglia*
 
    * Investigated hypothesis that maternal asthma can be a predictor of autism in children
@@ -83,6 +85,7 @@ Undergraduate-level Research
   ***Undergraduate Researcher***
   
   July 2018 - July 2020
+  
   *Principal Investigator: Dr. Megan Dennis | Project Mentor: Dr. Alexandra Colon-Rodriguez
   
   * Investigated molecular and behavioral characteristics of Autism Spectrum Disorder and studied epilepsy target genes
@@ -95,21 +98,16 @@ Volunteering and Teaching
 ======
 
 * **Statcom @UW**
-
   *Volunteer*
-  
   January 2021 - June 2022
   
   * Statistical analysis consulting work for organizations around the greater Seattle area  
 
 * **Teaching Assistant for Dr. Alison Fohner @UW**
-  
   *PHG401/BIOST401 - Computational and Applied Genetic Epidemiology*
-
   March 2021 - June 2021
 
 * **Tutor @UW School of Public Health**
-
   September 2021 - June 2022
 
   * Assisted graduate and undergraduate students with statistics concepts, intro genetics courses, and epidemiology courses 
@@ -136,8 +134,8 @@ Abstracts and Posters
 
 Relevant Academic Courses
 ======
-Undergraduate Genetics and Genomics & Statistics Coursework 
+Undergraduate Genetics and Genomics & Statistics Coursework: 
 * Analysis of Variance, Regression Analysis, Genes and Gene Expression, Functional Genomics, Comparative Genomics, Human Genetics and Genomics, Mathematical Statistics I and II, Advanced Eukaryotic Genetics, Nonparametric Statistics
 
-Graduate Genetic Epidemiology Coursework
+Graduate Genetic Epidemiology Coursework:
 * R for Health Data, Applied Biostatistics I and II, Pharmacology and Toxicogenomics, Statistical Genetics I and II, Genetic Epidemiology, Biological Data Science, Neuroepidemiology, Advanced Human Genetics, Bioinformatics and Sequence Analysis
