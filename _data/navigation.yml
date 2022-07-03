@@ -1,22 +1,16 @@
 # main links links
 main:
   - title: "Research"
-    url: /research/
+    url: /whyresearch/
  
-  - title: "Other Passions"
-    url: /passions/    
+  - title: "Hobbies"
+    url: /hobbies/    
 
-  - title: "Photography"
-    url: /pictures/    
+  - title: "National Park Trips"
+    url: /natlparks/    
     
-  - title: "Reading"
-    url: /reading/
-    
-  - title: "Papers I've Read"
+  - title: "Papers for Lab"
     url: /papers/
-    
-  - title: "Papers to Read"
-    url: /paperstoread/
         
   - title: "Blog"
     url: /year-archive/
