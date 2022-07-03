@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Why Research?"
-permalink: /whyresearch?/
+permalink: /whyresearch/
 author_profile: true
 redirect_from:
   - /resume
