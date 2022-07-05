@@ -1,5 +1,5 @@
 ---
-permalink: /papers/
+permalink: /labpapers/
 title: "Lab Papers"
 excerpt: 
 author_profile: true
