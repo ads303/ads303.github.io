@@ -4,10 +4,7 @@ main:
     url: /whyresearch/
  
   - title: "Hobbies"
-    url: /hobbies/    
-
-  - title: "National Park Trips"
-    url: /natlparks/    
+    url: /hobbies/       
     
   - title: "Lab Papers"
     url: /papers/
