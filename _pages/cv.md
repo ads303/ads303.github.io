@@ -13,7 +13,7 @@ redirect_from:
 Education
 ======
 
-**PhD Student**, Human Genetics**, University of Pittsburgh (2022-2026)
+**PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)
 
 **M.S.**, Genetic Epidemiology, University of Washington (Seattle) - completed June 2022
   
