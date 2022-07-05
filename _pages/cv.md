@@ -25,20 +25,23 @@ Education
 Graduate-level Research
 ======
 
-* **Park Lab - Dept. of Human Genetics @Pitt**  
-  ***PhD Student***
+*  **Park Lab - Dept. of Human Genetics @Pitt**  
+   ***PhD Student***
   
-  Start Date: May 2022
+   Start Date: May 2022
+   
+   Principal Investigator: Dr. HJ Park | Project Mentor: Dr. HJ Park
   
-  *Sepsis Genetics and Causal Factors*
-  * Using machine learning and causal inference methods to determine causal factors for sepsis
-  * UKB and NHANES datasets utilized
+   *Sepsis Genetics and Causal Factors*
+   * Using machine learning and causal inference methods to determine causal factors for sepsis
+   * UKB and NHANES datasets utilized - genetic, environmental, dietary variables (among many others) used
   
 *  **Ha Lab - Fred Hutchinson Cancer Center @UW**	             	       
    ***Graduate Rotation Student***
    
    January 2021 - December 2021
-   *Principal Investigator: Dr. Gavin Ha | Project Mentor: Dr. Gavin Ha*
+   
+   Principal Investigator: Dr. Gavin Ha | Project Mentor: Dr. Gavin Ha
 
    * Gene expression analysis of circulating tumor DNA from pediatric neuroblastoma
    * Collaboration with Dr. Brian Crompton, Dana-Farber Cancer Institute
@@ -50,7 +53,7 @@ Graduate-level Research
    
    January 2021 - June 2022
    
-   *Thesis Committee Chair: Dr. Kathleen Kerr | Thesis Committee Member: Dr. Bruce Weir*
+   Thesis Committee Chair: Dr. Kathleen Kerr | Thesis Committee Member: Dr. Bruce Weir
 
    * Investigated genetic components contributing to SARS-CoV-2 susceptibility
    * Multiethnic population group, conducted genome-wide association study (GWAS)
@@ -61,7 +64,7 @@ Graduate-level Research
    
    June 2021 - March 2022
    
-   *Principal Investigator: Dr. Helen Kim | Project Mentors: Dr. Shantel Weinsheimer and Dr. Helen Kim*
+   Principal Investigator: Dr. Helen Kim | Project Mentors: Dr. Shantel Weinsheimer and Dr. Helen Kim
 
    * Studied the genetic basis for Familial Cerebral Cavernous Malformation (CCM) progression
    * Conducted over-representation analysis using GWAS results for enriched biological pathways
@@ -72,7 +75,7 @@ Graduate-level Research
    
    June 2021 - September 2021
    
-   *Principal Investigator: Dr. Lauren Weiss | Project Mentor: Dr. Michela Traglia*
+   Principal Investigator: Dr. Lauren Weiss | Project Mentor: Dr. Michela Traglia
 
    * Investigated hypothesis that maternal asthma can be a predictor of autism in children
    * Worked extensively with polygenic risk scores and using risk scores as a metric for disease prediction and subsequent prevention
@@ -86,7 +89,7 @@ Undergraduate-level Research
   
   July 2018 - July 2020
   
-  *Principal Investigator: Dr. Megan Dennis | Project Mentor: Dr. Alexandra Colon-Rodriguez
+  Principal Investigator: Dr. Megan Dennis | Project Mentor: Dr. Alexandra Colon-Rodriguez
   
   * Investigated molecular and behavioral characteristics of Autism Spectrum Disorder and studied epilepsy target genes
   * Used Zebrafish as a model organism for all studies
