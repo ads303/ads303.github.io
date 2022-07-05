@@ -1,13 +1,13 @@
 # main links links
 main:
-  - title: "Research"
+  - title: "Why Research?"
     url: /whyresearch/
  
   - title: "Hobbies"
     url: /hobbies/       
     
   - title: "Lab Papers"
-    url: /papers/
+    url: /labpapers/
         
   - title: "Blog"
     url: /year-archive/
