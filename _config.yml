@@ -172,10 +172,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
  
-# Theme
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "aqua"
-
 
 # Collections
 collections:
