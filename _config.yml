@@ -85,11 +85,11 @@ analytics:
 author:
   name             : "Aditya Sriram"
   avatar           : "AdityaProfile2751x2751.jpg"
-  bio              : "A DNA strand was confused at work. One might say it was lagging behind."
+  bio              : "Machine learning for the purpose of human understanding."
   location         : "Pittsburgh, PA"
   employer         : 
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=i24X9hkAAAAJ&hl=en&oi=ao"
   email            : "ads303 at pitt.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
