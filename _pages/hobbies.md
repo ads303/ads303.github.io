@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "My Hobbies"
 permalink: /hobbies/
 author_profile: true
@@ -14,7 +13,7 @@ Some of my passion projects away from the lab:
 **Locked In Podcast (NBA, NFL, and all things sports)**
 ======
 
-My childhood friend Ani and I have always had scintillating discussions about the sports world. During the 2020 worldwide quarantine period, we decided that there was no point in us keeping our thoughts to ourselves. We started a sports podcast, have had a number of amazing sports personalities appear on our show, and continue to talk about the players and teams that we both love. Give it a listen [here!](https://open.spotify.com/show/756gJjzfV7YAlMP8vTHUHU?si=aff5c0d130d041ae)
+My childhood friend Ani and I have always had scintillating discussions about the sports world. During the COVID-19 global pandemic required quarantine period sometime in April 2020, we decided that there was no point in us keeping our thoughts to ourselves. We started a sports podcast, have had a number of amazing sports personalities appear on our show, and continue to talk about the players and teams that we both love. Give it a listen [here!](https://open.spotify.com/show/756gJjzfV7YAlMP8vTHUHU?si=aff5c0d130d041ae)
 
 **Music Production**
 ======
