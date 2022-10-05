@@ -15,6 +15,6 @@ All of my graduate school research has been computationally driven, and has invo
 
 Besides my research, my hobbies include covering and writing about the NBA, producing music, playing sports any chance I can get, and working on making the perfect cup of espresso.    
 
-If there's something you want to ask me or have any questions about the site in general, send me an email at: ads303@pitt.edu
+If there's something you want to ask me or have any questions about the site in general, send me an email at: [ads303@pitt.edu](mailto:ads303@pitt.edu)
 
 Thanks for stopping by! 
