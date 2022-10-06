@@ -35,6 +35,7 @@ Graduate-Level Research
    *Sepsis Genetics and Causal Analysis*
    * Using machine learning and causal inference methods to determine causal factors for sepsis-related mortality
    * Developing statistical models to identify risk factors in large-scale databases for complex genetic diseases
+ 
   
 *  **Ha Lab - Fred Hutchinson Cancer Center & University of Washington, Seattle**	             	       
    ***Graduate Rotation Student***
@@ -48,6 +49,7 @@ Graduate-Level Research
    * Identified target transcription factor binding sites of interest in Neuroblastoma genetic pathways
    * [Ha Lab Project Recap](https://docs.google.com/presentation/d/1D8eAk3np1AYlfoIxhU6HebP2lrm6zbjKtrM2FUeLgAk/edit?usp=sharing)
 
+
 *  **Master's Thesis Research @University of Washington, Seattle**	             	       
    ***Graduate Student***
    
@@ -59,6 +61,7 @@ Graduate-Level Research
    * Multiethnic populations; conducted genome-wide association study (GWAS)
    * [Genetic Risk Factors Associated with SARS-Cov-2 Susceptibility in Multiethnic Populations](https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html) published in ***Journal of Biology and Today's World***
 
+
 *  **Center for Cerebrovascular Research @UCSF Parnassus Campus**	             	       
    ***Research Intern***
    
@@ -69,6 +72,7 @@ Graduate-Level Research
    * Studied the genetic basis for Familial Cerebral Cavernous Malformation (CCM) progression
    * Conducted over-representation analysis using GWAS results for enriched biological pathways
    * [Abstract 109: Biological Pathways Enriched For Genes Associated With Lesion Burden In Cerebral Cavernous Malformation](https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109)
+
 
 *  **Weiss Lab @UCSF Weill Institute for Neurosciences**	             	       
    ***Research Intern***
@@ -101,13 +105,13 @@ Invited Talks
 ======
 
 * **International Stroke Conference 2022, February 2022 @New Orleans, LA**
-  *Session Title: Aneurysms and Vascular Malformations Oral Abstracts I*
-  **Affiliation: UCSF**
-  [Transcript](https://docs.google.com/document/d/194jP7UNNV_ziO6OMViuAn315mrLHG76N/edit?usp=sharing&ouid=113345651194344459277&rtpof=true&sd=true)
+  * *Session Title: Aneurysms and Vascular Malformations Oral Abstracts I*
+  * **Affiliation: UCSF**
+  * [Transcript](https://docs.google.com/document/d/194jP7UNNV_ziO6OMViuAn315mrLHG76N/edit?usp=sharing&ouid=113345651194344459277&rtpof=true&sd=true)
 
 * **Angioma Alliance 2021 International CCM Scientific Meeting, November 2021**
-  *Session 1: Basic Science*
-  **Affiliation: UCSF**
+  * *Session 1: Basic Science*
+  * **Affiliation: UCSF**
   
 Volunteering and Teaching
 ======
