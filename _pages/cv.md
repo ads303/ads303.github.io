@@ -19,35 +19,36 @@ Education
   * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations* 
 
 **B.S.**, Genetics and Genommics, University of California Davis - completed March 2020
+
 **Minor**, Statistics, University of California Davis - completed March 2020
     
-Graduate-level Research
+Graduate-Level Research
 ======
 
-*  **Park Lab - Dept. of Human Genetics @Pitt**  
+*  **Park Lab - Dept. of Human Genetics @University of Pittsburgh**  
    ***PhD Student***
   
-   Start Date: May 2022
+   May 2022 - Present
    
-   Principal Investigator: Dr. HJ Park | Project Mentor: Dr. HJ Park
+   Principal Investigator: Dr. HJ Park, Project Mentor: Dr. HJ Park
   
-   *Sepsis Genetics and Causal Factors*
-   * Using machine learning and causal inference methods to determine causal factors for sepsis
-   * UKB and NHANES datasets utilized - genetic, environmental, dietary variables (among many others) used
+   *Sepsis Genetics and Causal Analysis*
+   * Using machine learning and causal inference methods to determine causal factors for sepsis-related mortality
+   * Developing statistical models to identify risk factors in large-scale databases for complex genetic diseases
   
-*  **Ha Lab - Fred Hutchinson Cancer Center @UW**	             	       
+*  **Ha Lab - Fred Hutchinson Cancer Center & University of Washington, Seattle**	             	       
    ***Graduate Rotation Student***
    
    January 2021 - December 2021
    
-   ==Principal Investigator: Dr. Gavin Ha, Project Mentor: Dr. Gavin Ha==
+   Principal Investigator: Dr. Gavin Ha, Project Mentor: Dr. Gavin Ha
 
    * Gene expression analysis of circulating tumor DNA from pediatric neuroblastoma
    * Collaboration with Dr. Brian Crompton, Dana-Farber Cancer Institute
    * Identified target transcription factor binding sites of interest in Neuroblastoma genetic pathways
    * [Ha Lab Project Recap](https://docs.google.com/presentation/d/1D8eAk3np1AYlfoIxhU6HebP2lrm6zbjKtrM2FUeLgAk/edit?usp=sharing)
 
-*  **Master's Thesis Research @UW**	             	       
+*  **Master's Thesis Research @University of Washington, Seattle**	             	       
    ***Graduate Student***
    
    January 2021 - June 2022
@@ -55,8 +56,8 @@ Graduate-level Research
    Thesis Committee Chair: Dr. Kathleen Kerr, Thesis Committee Member: Dr. Bruce Weir
 
    * Investigated genetic components contributing to SARS-CoV-2 susceptibility
-   * Multiethnic population group, conducted genome-wide association study (GWAS)
-   * [Link to thesis on pre-print server](https://www.medrxiv.org/content/10.1101/2022.06.23.22276797v1.full-text)
+   * Multiethnic populations; conducted genome-wide association study (GWAS)
+   * [Genetic Risk Factors Associated with SARS-Cov-2 Susceptibility in Multiethnic Populations](https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html) published in ***Journal of Biology and Today's World***
 
 *  **Center for Cerebrovascular Research @UCSF Parnassus Campus**	             	       
    ***Research Intern***
@@ -67,7 +68,7 @@ Graduate-level Research
 
    * Studied the genetic basis for Familial Cerebral Cavernous Malformation (CCM) progression
    * Conducted over-representation analysis using GWAS results for enriched biological pathways
-   * [Abstract for a talk given @International Stroke Conference 2022](https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109)
+   * [Abstract 109: Biological Pathways Enriched For Genes Associated With Lesion Burden In Cerebral Cavernous Malformation](https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109)
 
 *  **Weiss Lab @UCSF Weill Institute for Neurosciences**	             	       
    ***Research Intern***
@@ -93,9 +94,21 @@ Undergraduate-level Research
   * Investigated molecular and behavioral characteristics of Autism Spectrum Disorder and studied epilepsy target genes
   * Used Zebrafish as a model organism for all studies
   * Tasks included: Zebrafish genotyping, PAGE-gel preparation and characterization of Zebrafish variants, qPCR and Melt Curve data analysis, primer design for both standard PCR and qPCR assays, microinjections of Zebrafish with fluorescent markers to study gene function and developmental processes
-  * [Research Poster - 2019](https://drive.google.com/file/d/1oihfUccdz91x5ctHMu1rMXk-PtyxO0FX/view?usp=sharing)
-  * [Frontiers Publication - 2020](https://www.frontiersin.org/articles/10.3389/fcell.2020.586296/full)
+  * [Assessment of Autism Zebrafish Mutant Models Using a High-Throughput Larval Phenotyping Platform](https://www.frontiersin.org/articles/10.3389/fcell.2020.586296/full) published in ***Frontiers in Cell and Developmental Biology***
+  * [UC Davis Undergraduate Research Conference Poster - 2019](https://drive.google.com/file/d/1oihfUccdz91x5ctHMu1rMXk-PtyxO0FX/view?usp=sharing)
 
+Invited Talks
+======
+
+* **International Stroke Conference 2022, February 2022 @New Orleans, LA**
+  *Session Title: Aneurysms and Vascular Malformations Oral Abstracts I*
+  **Affiliation: UCSF**
+  [Transcript](https://docs.google.com/document/d/194jP7UNNV_ziO6OMViuAn315mrLHG76N/edit?usp=sharing&ouid=113345651194344459277&rtpof=true&sd=true)
+
+* **Angioma Alliance 2021 International CCM Scientific Meeting, November 2021**
+  *Session 1: Basic Science*
+  **Affiliation: UCSF**
+  
 Volunteering and Teaching
 ======
 
@@ -103,7 +116,7 @@ Volunteering and Teaching
   *Volunteer*
   January 2021 - June 2022
   
-  * Statistical analysis consulting work for organizations around the greater Seattle area  
+  * Statistical analysis and consulting work for organizations around the greater Seattle area.  
 
 * **Teaching Assistant for Dr. Alison Fohner @UW**
   *PHG401/BIOST401 - Computational and Applied Genetic Epidemiology*
@@ -124,7 +137,7 @@ Technical Skills
     
 Publications
 ======
-**Sriram, A.D.** (2022). Genetic risk factors associated with SARS-CoV-2 susceptibility in multiethnic populations. MedRxiv, 2022.06.23.22276797. [link](https://doi.org/10.1101/2022.06.23.22276797)
+**Sriram, A.D.**, Kerr K.F. Genetic Risk Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations. J Biol Today's World, 2022, 11(4), 001-004 [link](https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html)
 
 Colón-Rodríguez, A., Uribe-Salazar, J. M., Weyenberg, K. B., **Sriram, A.**, Quezada, A., Kaya, G., Jao, E., Radke, B., Lein, P. J., Dennis, M. Y., (2020). Assessment of Autism Zebrafish Mutant Models Using a High-Throughput Larval Phenotyping Platform. Frontiers in Cell and Developmental Biology, 8. [link](https://www.frontiersin.org/article/10.3389/fcell.2020.586296)
 
