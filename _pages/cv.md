@@ -12,15 +12,11 @@ redirect_from:
 Education
 ======
 
-**PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)
-
-**M.S.**, Genetic Epidemiology, University of Washington (Seattle) - completed June 2022
-  
-  * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations* 
-
-**B.S.**, Genetics and Genommics, University of California Davis - completed March 2020
-
-**Minor**, Statistics, University of California Davis - completed March 2020
+**PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)  
+**M.S.**, Genetic Epidemiology, University of Washington (Seattle) - completed June 2022  
+  * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations*  
+**B.S.**, Genetics and Genommics, University of California Davis - completed March 2020  
+  * **Minor**, Statistics, University of California Davis - completed March 2020
     
 Graduate-Level Research
 ======
@@ -148,8 +144,7 @@ Abstracts and Posters
 
 Relevant Academic Courses
 ======
-Undergraduate Genetics and Genomics & Statistics Coursework: 
-* Analysis of Variance, Regression Analysis, Genes and Gene Expression, Functional Genomics, Comparative Genomics, Human Genetics and Genomics, Mathematical Statistics I and II, Advanced Eukaryotic Genetics, Nonparametric Statistics
-
-Graduate Genetic Epidemiology Coursework:
-* R for Health Data, Applied Biostatistics I and II, Pharmacology and Toxicogenomics, Statistical Genetics I and II, Genetic Epidemiology, Biological Data Science, Neuroepidemiology, Advanced Human Genetics, Bioinformatics and Sequence Analysis
+**Undergraduate Genetics and Genomics & Statistics Coursework:**  
+*Analysis of Variance, Regression Analysis, Genes and Gene Expression, Functional Genomics, Comparative Genomics, Human Genetics and Genomics, Mathematical Statistics I and II, Advanced Eukaryotic Genetics, Nonparametric Statistics*
+**Graduate Genetic Epidemiology Coursework:**  
+*R for Health Data, Applied Biostatistics I and II, Pharmacology and Toxicogenomics, Statistical Genetics I and II, Genetic Epidemiology, Biological Data Science, Neuroepidemiology, Advanced Human Genetics, Bioinformatics and Sequence Analysis*
