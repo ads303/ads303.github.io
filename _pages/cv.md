@@ -115,16 +115,13 @@ Invited Talks
   
 Volunteering and Teaching
 ======
-
 * **Statcom @UW**
   * *Volunteer*  
   * January 2021 - June 2022  
   * *Statistical analysis and consulting work for organizations around the greater Seattle area.*  
-
 * **Teaching Assistant for Dr. Alison Fohner @UW**
   * PHG401/BIOST401 - Computational and Applied Genetic Epidemiology (average rating 4.92/5)  
   * March 2021 - June 2021
-
 * **Tutor @UW School of Public Health**
   * September 2021 - June 2022
   * Assisted graduate and undergraduate students with statistics concepts, intro genetics courses, and epidemiology courses 
