@@ -146,6 +146,6 @@ Abstracts and Posters
 Relevant Academic Courses
 ======
 **Undergraduate Genetics and Genomics & Statistics Coursework:**  
-*Analysis of Variance, Regression Analysis, Genes and Gene Expression, Functional Genomics, Comparative Genomics, Human Genetics and Genomics, Mathematical Statistics I and II, Advanced Eukaryotic Genetics, Nonparametric Statistics*
+*Analysis of Variance, Regression Analysis, Genes and Gene Expression, Functional Genomics, Comparative Genomics, Human Genetics and Genomics, Mathematical Statistics I and II, Advanced Eukaryotic Genetics, Nonparametric Statistics*  
 **Graduate Genetic Epidemiology Coursework:**  
 *R for Health Data, Applied Biostatistics I and II, Pharmacology and Toxicogenomics, Statistical Genetics I and II, Genetic Epidemiology, Biological Data Science, Neuroepidemiology, Advanced Human Genetics, Bioinformatics and Sequence Analysis*
