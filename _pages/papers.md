@@ -21,6 +21,8 @@ redirect_from:
 
 [Common Methods for Performing Mendelian Randomization](https://www.frontiersin.org/articles/10.3389/fcvm.2018.00051/full)
 
+[UKB Polygenic Risk Score Release Paper - README](https://biobank.ctsu.ox.ac.uk/crystal/ukb/docs/PRS_Release_README.pdf)
+
 
 
 
