@@ -23,6 +23,8 @@ redirect_from:
 
 [UKB Polygenic Risk Score Release Paper - README](https://biobank.ctsu.ox.ac.uk/crystal/ukb/docs/PRS_Release_README.pdf)
 
+[Research Access Platform - WES QC & Analysis Protocol](https://dnanexus.gitbook.io/uk-biobank-rap/science-corner/whole-exome-sequencing-oqfe-protocol/protocol-for-processing-ukb-whole-exome-sequencing-data-sets)
+
 
 
 
