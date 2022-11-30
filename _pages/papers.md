@@ -25,6 +25,10 @@ redirect_from:
 
 [Research Access Platform - WES QC & Analysis Protocol](https://dnanexus.gitbook.io/uk-biobank-rap/science-corner/whole-exome-sequencing-oqfe-protocol/protocol-for-processing-ukb-whole-exome-sequencing-data-sets)
 
+[Multiple Knockoffs](https://www.pnas.org/doi/full/10.1073/pnas.2105191118)
+
+[Validation Sepsis Cohort for UKB Paper #1](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206527#sec019)
+
 
 
 
