@@ -27,6 +27,8 @@ redirect_from:
 
 [Multiple Knockoffs](https://www.pnas.org/doi/full/10.1073/pnas.2105191118)
 
+[original paper for multiple knockoffs implementation](https://arxiv.org/pdf/1810.11378.pdf)
+
 [Validation Sepsis Cohort for UKB Paper #1](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206527#sec019)
 
 
