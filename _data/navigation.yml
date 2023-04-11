@@ -2,6 +2,9 @@
 main:
   - title: "Published Work"
     url: /publishedwork/
+    
+  - title: "Shiny Apps"
+    url: /shinyapps/
  
   - title: "Hobbies"
     url: /hobbies/       
