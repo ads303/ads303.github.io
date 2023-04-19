@@ -7,6 +7,13 @@ redirect_from:
 ---
 
 {% include base_path %}
+[**Refining empiric subgroups of pediatric sepsis using machine-learning techniques on observational data**](https://www.frontiersin.org/articles/10.3389/fped.2023.1035576/full)  
+**Citation:** Qin, Y., Caldino Bohn, RI., **Sriram, A.**, Kernan K., Carcillo, JA., Kim, S., Park, HJ. Refining empiric subgroups of pediatric sepsis using machine-learning techniques on observational data. Frontiers in Pediatrics 11 (2023). https://doi.org:10.3389/fped.2023.1035576
+
+<img src="https://user-images.githubusercontent.com/108133717/233152690-831aa9b2-1703-4f89-9a98-cb7e125e7742.png" width="280" height="280">
+
+**Abstract:** Sepsis contributes to 1 of every 5 deaths globally with 3 million per year occurring in children. To improve clinical outcomes in pediatric sepsis, it is critical to avoid “one-size-fits-all” approaches and to employ a precision medicine approach. To advance a precision medicine approach to pediatric sepsis treatments, this review provides a summary of two phenotyping strategies, empiric and machine-learning-based phenotyping based on multifaceted data underlying the complex pediatric sepsis pathobiology. Although empiric and machine-learning-based phenotypes help clinicians accelerate the diagnosis and treatments, neither empiric nor machine-learning-based phenotypes fully encapsulate all aspects of pediatric sepsis heterogeneity. To facilitate accurate delineations of pediatric sepsis phenotypes for precision medicine approach, methodological steps and challenges are further highlighted.
+
 [**Genetic Risk Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations**](https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html)  
 **Citation:** **Sriram AD**, Kerr K. Genetic Risk Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations. J Biol Today's World, 2022, 11(4), 001-004.  
 <img src="https://user-images.githubusercontent.com/108133717/231258716-0dce9f4c-320b-4f5a-8ce8-45d27faa6bc4.png" width="280" height="280">
