@@ -7,6 +7,13 @@ redirect_from:
 ---
 
 {% include base_path %}
+[**Deep neural networks with knockoff features identify nonlinear causal relations and estimate effect sizes in complex biological systems**](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad044/7217083)  
+**Citation:** Fan, Z., Kernan, K. F., **Sriram, A.**, Benos, P. V., Canna, S. W., Carcillo, J. A., Kim, S., & Park, H. J. (2023). Deep neural networks with knockoff features identify nonlinear causal relations and estimate effect sizes in complex biological systems. GigaScience, 12. https://doi.org/10.1093/gigascience/giad044 
+
+<img src="https://github.com/ads303/ads303.github.io/assets/108133717/7d897a78-2ed2-461d-b818-0230e96d50c6.png" width="280" height="280">
+
+**Abstract:** Learning the causal structure helps identify risk factors, disease mechanisms, and candidate therapeutics for complex diseases. However, although complex biological systems are characterized by nonlinear associations, existing bioinformatic methods of causal inference cannot identify the nonlinear relationships and estimate their effect size. To overcome these limitations, we developed the first computational method that explicitly learns nonlinear causal relations and estimates the effect size using a deep neural network approach coupled with the knockoff framework, named causal directed acyclic graphs using deep learning variable selection (DAG-deepVASE). Using simulation data of diverse scenarios and identifying known and novel causal relations in molecular and clinical data of various diseases, we demonstrated that DAG-deepVASE consistently outperforms existing methods in identifying true and known causal relations. In the analyses, we also illustrate how identifying nonlinear causal relations and estimating their effect size help understand the complex disease pathobiology, which is not possible using other methods. With these advantages, the application of DAG-deepVASE can help identify driver genes and therapeutic agents in biomedical studies and clinical trials.
+
 [**Refining empiric subgroups of pediatric sepsis using machine-learning techniques on observational data**](https://www.frontiersin.org/articles/10.3389/fped.2023.1035576/full)  
 **Citation:** Qin, Y., Caldino Bohn, RI., **Sriram, A.**, Kernan K., Carcillo, JA., Kim, S., Park, HJ. Refining empiric subgroups of pediatric sepsis using machine-learning techniques on observational data. Frontiers in Pediatrics 11 (2023). https://doi.org:10.3389/fped.2023.1035576
 
