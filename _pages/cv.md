@@ -11,9 +11,11 @@ redirect_from:
 
 Education
 ======
-**3rd-Year PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)\  
+**3rd-Year PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)\
+
 **M.S.**, Genetic Epidemiology, University of Washington (Seattle) - completed June 2022\  
-  * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations*\  
+  * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations*\
+  
 **B.S.**, Genetics and Genomics, University of California Davis - completed March 2020\  
   * **Minor**, Statistics, University of California Davis - completed March 2020
     
