@@ -11,8 +11,7 @@ redirect_from:
 
 Education
 ======
-
-**PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)  
+**3rd-Year PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)  
 **M.S.**, Genetic Epidemiology, University of Washington (Seattle) - completed June 2022  
   * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations*  
 
@@ -21,24 +20,22 @@ Education
     
 Graduate-Level Research
 ======
-
 *  **Park Lab - Dept. of Human Genetics @University of Pittsburgh**  
    ***PhD Student***
-  
    May 2022 - Present
-   
-   Principal Investigator: Dr. HJ Park, Project Mentor: Dr. HJ Park
+   Principal Investigator: Dr. HJ Park, Project Mentors: Dr. HJ Park, Dr. Soyeon Kim
   
    *Sepsis Genetics and Causal Analysis*
    * Using machine learning and causal inference methods to determine causal factors for sepsis-related mortality
    * Developing statistical models to identify risk factors in large-scale databases for complex genetic diseases
+   * key topics: causal inference, network biology, use of polygenic risk scores as instrumental variables
+   *eQTM Database Building*
+   * Using existing eQTM data to construct a publicly accessible database for exploration of eQTM data
  
   
 *  **Ha Lab - Fred Hutchinson Cancer Center & University of Washington, Seattle**	             	       
    ***Graduate Rotation Student***
-   
    January 2021 - December 2021
-   
    Principal Investigator: Dr. Gavin Ha, Project Mentor: Dr. Gavin Ha
 
    * Gene expression analysis of circulating tumor DNA from pediatric neuroblastoma
@@ -49,9 +46,7 @@ Graduate-Level Research
 
 *  **Master's Thesis Research @University of Washington, Seattle**	             	       
    ***Graduate Student***
-   
    January 2021 - June 2022
-   
    Thesis Committee Chair: Dr. Kathleen Kerr, Thesis Committee Member: Dr. Bruce Weir
 
    * Investigated genetic components contributing to SARS-CoV-2 susceptibility
@@ -61,9 +56,7 @@ Graduate-Level Research
 
 *  **Center for Cerebrovascular Research @UCSF Parnassus Campus**	             	       
    ***Research Intern***
-   
    June 2021 - March 2022
-   
    Principal Investigator: Dr. Helen Kim, Project Mentors: Dr. Shantel Weinsheimer and Dr. Helen Kim
 
    * Studied the genetic basis for Familial Cerebral Cavernous Malformation (CCM) progression
@@ -73,9 +66,7 @@ Graduate-Level Research
 
 *  **Weiss Lab @UCSF Weill Institute for Neurosciences**	             	       
    ***Research Intern***
-   
    June 2021 - September 2021
-   
    Principal Investigator: Dr. Lauren Weiss, Project Mentor: Dr. Michela Traglia
 
    * Investigated hypothesis that maternal asthma can be a predictor of autism in children
@@ -84,12 +75,9 @@ Graduate-Level Research
 
 Undergraduate-level Research
 ======
-
 * **Dennis Lab - Human Genomics, Evolution, and Disease Genetics @UC Davis**  
   ***Undergraduate Researcher***
-  
   July 2018 - July 2020
-  
   Principal Investigator: Dr. Megan Dennis, Project Mentor: Dr. Alexandra Colon-Rodriguez
   
   * Investigated molecular and behavioral characteristics of Autism Spectrum Disorder and studied epilepsy target genes
@@ -100,7 +88,6 @@ Undergraduate-level Research
 
 Invited Talks
 ======
-
 * **International Stroke Conference 2022, February 2022 @New Orleans, LA**
   * *Session Title: Aneurysms and Vascular Malformations Oral Abstracts I*
   * **Affiliation: UCSF**
@@ -133,12 +120,22 @@ Technical Skills
     
 Publications
 ======
+Frias-Anaya, E., Gallego-Gutierrez, H., Gongol, B., Weinsheimer, S., Lai, C. C., Orecchioni, M., **Sriram, A.**, Bui, C. M., Nelsen, B., Hale, P., Pham, A., Shenkar, R., DeBiasse, D., Lightle, R., Girard, R., Li, Y., Srinath, A., Daneman, R., Nudleman, E., Sun, H., … Lopez-Ramirez, M. A. (2024). Mild Hypoxia Accelerates Cerebral Cavernous Malformation Disease Through CX3CR1-CX3CL1 Signaling. Arteriosclerosis, thrombosis, and vascular biology, 10.1161/ATVBAHA.123.320367. Advance online publication. [link](https://doi.org/10.1161/ATVBAHA.123.320367)
+
+Qin, Y., Caldino Bohn, R. I., **Sriram, A.**, Kernan, K. F., Carcillo, J. A., Kim, S., & Park, H. J. (2023). Refining empiric subgroups of pediatric sepsis using machine-learning techniques on observational data. Frontiers in pediatrics, 11, 1035576. [link](https://doi.org/10.3389/fped.2023.1035576)
+
+Fan, Z., Kernan, K. F., **Sriram, A.**, Benos, P. V., Canna, S. W., Carcillo, J. A., Kim, S., & Park, H. J. (2022). Deep neural networks with knockoff features identify nonlinear causal relations and estimate effect sizes in complex biological systems. GigaScience, 12, giad044. [link](https://doi.org/10.1093/gigascience/giad044)
+
 **Sriram, A.D.**, Kerr K.F. Genetic Risk Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations. J Biol Today's World, 2022, 11(4), 001-004 [link](https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html)
 
 Colón-Rodríguez, A., Uribe-Salazar, J. M., Weyenberg, K. B., **Sriram, A.**, Quezada, A., Kaya, G., Jao, E., Radke, B., Lein, P. J., Dennis, M. Y., (2020). Assessment of Autism Zebrafish Mutant Models Using a High-Throughput Larval Phenotyping Platform. Frontiers in Cell and Developmental Biology, 8. [link](https://www.frontiersin.org/article/10.3389/fcell.2020.586296)
 
 Abstracts and Posters
 ======
+**Sriram, A.**, Park, H.J. A Deep Learning-Based Exposome Data Analysis with Biological Knockoff Estimation (deepEXPOKE) for Sepsis Incidence and Mortality Using UK BioBank Data. Poster presented at STATGEN Conference, 2024; Pittsburgh, PA. 
+
+**Sriram, A.**, Carcillo, J.A., Park, H.J. EBV Seropositivity, Cytokinemia, and Mortality in Pediatric Sepsis; A Causal Inference Analysis. Poster presented at i4Kids Symposium 2024; Pittsburgh, PA. 
+
 **Sriram, A.**, Weinsheimer, S., Nelson, J., Mabray, M., Zabramski, J. M., Akers, A., Hart, B., Morrison, L., McCulloch, C. E., Kim, H., (2022). Abstract 109: Biological Pathways Enriched For Genes Associated With Lesion Burden In Cerebral Cavernous Malformation. Stroke, (Suppl_1), A109–A109. [link](https://doi.org/10.1161/str.53.suppl_1.109) 
 
 **Sriram, A.**, Colón-Rodrigues, A., Dennis, M. Y. Morphological characterization of autism spectrum disorder mutations in zebrafish. Poster presented at UC Davis Undergraduate Research Conference, 2019; Davis, CA.       
