@@ -22,22 +22,22 @@ Graduate-Level Research
 ======
 *  **Park Lab - Dept. of Human Genetics @University of Pittsburgh**  
    ***PhD Student***
-   May 2022 - Present
-   Principal Investigator: Dr. HJ Park
+   May 2022 - Present\
+   Principal Investigator: Dr. HJ Park\
    Project Mentors: Dr. HJ Park, Dr. Soyeon Kim
   
    *Sepsis Genetics and Causal Analysis*
    * Using machine learning and causal inference methods to determine causal factors for sepsis-related mortality
    * Developing statistical models to identify risk factors in large-scale databases for complex genetic diseases
-   * key topics: causal inference, network biology, use of polygenic risk scores as instrumental variables
+   * key topics: causal inference, network biology, use of polygenic risk scores as instrumental variables\
    *eQTM Database Building*
    * Using existing eQTM data to construct a publicly accessible database for exploration of eQTM data
  
   
 *  **Ha Lab - Fred Hutchinson Cancer Center & University of Washington, Seattle**	             	       
    ***Graduate Rotation Student***
-   January 2021 - December 2021
-   Principal Investigator: Dr. Gavin Ha
+   January 2021 - December 2021\
+   Principal Investigator: Dr. Gavin Ha\
    Project Mentor: Dr. Gavin Ha
 
    * Gene expression analysis of circulating tumor DNA from pediatric neuroblastoma
@@ -48,8 +48,8 @@ Graduate-Level Research
 
 *  **Master's Thesis Research @University of Washington, Seattle**	             	       
    ***Graduate Student***
-   January 2021 - June 2022
-   Thesis Committee Chair: Dr. Kathleen Kerr
+   January 2021 - June 2022\
+   Thesis Committee Chair: Dr. Kathleen Kerr\
    Thesis Committee Member: Dr. Bruce Weir
 
    * Investigated genetic components contributing to SARS-CoV-2 susceptibility
@@ -59,8 +59,8 @@ Graduate-Level Research
 
 *  **Center for Cerebrovascular Research @UCSF Parnassus Campus**	             	       
    ***Research Intern***
-   June 2021 - March 2022
-   Principal Investigator: Dr. Helen Kim
+   June 2021 - March 2022\
+   Principal Investigator: Dr. Helen Kim\
    Project Mentors: Dr. Shantel Weinsheimer and Dr. Helen Kim
 
    * Studied the genetic basis for Familial Cerebral Cavernous Malformation (CCM) progression
@@ -70,8 +70,8 @@ Graduate-Level Research
 
 *  **Weiss Lab @UCSF Weill Institute for Neurosciences**	             	       
    ***Research Intern***
-   June 2021 - September 2021
-   Principal Investigator: Dr. Lauren Weiss
+   June 2021 - September 2021\
+   Principal Investigator: Dr. Lauren Weiss\
    Project Mentor: Dr. Michela Traglia
 
    * Investigated hypothesis that maternal asthma can be a predictor of autism in children
@@ -82,8 +82,8 @@ Undergraduate-level Research
 ======
 * **Dennis Lab - Human Genomics, Evolution, and Disease Genetics @UC Davis**  
   ***Undergraduate Researcher***
-  July 2018 - July 2020
-  Principal Investigator: Dr. Megan Dennis
+  July 2018 - July 2020\
+  Principal Investigator: Dr. Megan Dennis\
   Project Mentor: Dr. Alexandra Colon-Rodriguez
   
   * Investigated molecular and behavioral characteristics of Autism Spectrum Disorder and studied epilepsy target genes
