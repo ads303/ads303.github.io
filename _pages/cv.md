@@ -11,11 +11,10 @@ redirect_from:
 
 Education
 ======
-**3rd-Year PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)  
-**M.S.**, Genetic Epidemiology, University of Washington (Seattle) - completed June 2022  
-  * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations*  
-
-**B.S.**, Genetics and Genomics, University of California Davis - completed March 2020  
+**3rd-Year PhD Student**, Human Genetics, University of Pittsburgh (2022-2026)\  
+**M.S.**, Genetic Epidemiology, University of Washington (Seattle) - completed June 2022\  
+  * Departmental Thesis: *Genetic Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations*\  
+**B.S.**, Genetics and Genomics, University of California Davis - completed March 2020\  
   * **Minor**, Statistics, University of California Davis - completed March 2020
     
 Graduate-Level Research
@@ -30,6 +29,7 @@ Graduate-Level Research
    * Using machine learning and causal inference methods to determine causal factors for sepsis-related mortality
    * Developing statistical models to identify risk factors in large-scale databases for complex genetic diseases
    * key topics: causal inference, network biology, use of polygenic risk scores as instrumental variables\
+   
    *eQTM Database Building*
    * Using existing eQTM data to construct a publicly accessible database for exploration of eQTM data
  
