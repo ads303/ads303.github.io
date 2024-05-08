@@ -23,19 +23,22 @@ Graduate-Level Research
 *  **Park Lab - Dept. of Human Genetics @University of Pittsburgh**  
    ***PhD Student***
    May 2022 - Present
-   Principal Investigator: Dr. HJ Park  Project Mentors: Dr. HJ Park, Dr. Soyeon Kim
+   Principal Investigator: Dr. HJ Park
+   Project Mentors: Dr. HJ Park, Dr. Soyeon Kim
   
    *Sepsis Genetics and Causal Analysis*
    * Using machine learning and causal inference methods to determine causal factors for sepsis-related mortality
    * Developing statistical models to identify risk factors in large-scale databases for complex genetic diseases
-   * key topics: causal inference, network biology, use of polygenic risk scores as instrumental variables  *eQTM Database Building*
+   * key topics: causal inference, network biology, use of polygenic risk scores as instrumental variables
+   *eQTM Database Building*
    * Using existing eQTM data to construct a publicly accessible database for exploration of eQTM data
  
   
 *  **Ha Lab - Fred Hutchinson Cancer Center & University of Washington, Seattle**	             	       
    ***Graduate Rotation Student***
    January 2021 - December 2021
-   Principal Investigator: Dr. Gavin Ha  Project Mentor: Dr. Gavin Ha
+   Principal Investigator: Dr. Gavin Ha
+   Project Mentor: Dr. Gavin Ha
 
    * Gene expression analysis of circulating tumor DNA from pediatric neuroblastoma
    * Collaboration with Dr. Brian Crompton, Dana-Farber Cancer Institute
@@ -45,7 +48,9 @@ Graduate-Level Research
 
 *  **Master's Thesis Research @University of Washington, Seattle**	             	       
    ***Graduate Student***
-   January 2021 - June 2022  Thesis Committee Chair: Dr. Kathleen Kerr  Thesis Committee Member: Dr. Bruce Weir
+   January 2021 - June 2022
+   Thesis Committee Chair: Dr. Kathleen Kerr
+   Thesis Committee Member: Dr. Bruce Weir
 
    * Investigated genetic components contributing to SARS-CoV-2 susceptibility
    * Multiethnic populations; conducted genome-wide association study (GWAS)
@@ -54,7 +59,9 @@ Graduate-Level Research
 
 *  **Center for Cerebrovascular Research @UCSF Parnassus Campus**	             	       
    ***Research Intern***
-   June 2021 - March 2022  Principal Investigator: Dr. Helen Kim  Project Mentors: Dr. Shantel Weinsheimer and Dr. Helen Kim
+   June 2021 - March 2022
+   Principal Investigator: Dr. Helen Kim
+   Project Mentors: Dr. Shantel Weinsheimer and Dr. Helen Kim
 
    * Studied the genetic basis for Familial Cerebral Cavernous Malformation (CCM) progression
    * Conducted over-representation analysis using GWAS results for enriched biological pathways
@@ -63,7 +70,9 @@ Graduate-Level Research
 
 *  **Weiss Lab @UCSF Weill Institute for Neurosciences**	             	       
    ***Research Intern***
-   June 2021 - September 2021  Principal Investigator: Dr. Lauren Weiss  Project Mentor: Dr. Michela Traglia
+   June 2021 - September 2021
+   Principal Investigator: Dr. Lauren Weiss
+   Project Mentor: Dr. Michela Traglia
 
    * Investigated hypothesis that maternal asthma can be a predictor of autism in children
    * Worked extensively with polygenic risk scores and using risk scores as a metric for disease prediction and subsequent prevention
@@ -73,7 +82,9 @@ Undergraduate-level Research
 ======
 * **Dennis Lab - Human Genomics, Evolution, and Disease Genetics @UC Davis**  
   ***Undergraduate Researcher***
-  July 2018 - July 2020  Principal Investigator: Dr. Megan Dennis  Project Mentor: Dr. Alexandra Colon-Rodriguez
+  July 2018 - July 2020
+  Principal Investigator: Dr. Megan Dennis
+  Project Mentor: Dr. Alexandra Colon-Rodriguez
   
   * Investigated molecular and behavioral characteristics of Autism Spectrum Disorder and studied epilepsy target genes
   * Used Zebrafish as a model organism for all studies
@@ -94,6 +105,12 @@ Invited Talks
   
 Volunteering and Teaching
 ======
+* **Guest lecture, HUGEN 2078 - Genomic Data & Advanced Topics in Bioinformatics**
+  * Gave two lectures on the use of RShiny and its applications to genomic data visualization and analysis  
+  * September 2023
+* **Guest lecture, HUGEN 2080 - Statistical Genetics**
+  * Gave a lecture on Polygenic Risk Scores and research applications using PRS 
+  * April 2024
 * **Statcom @UW**
   * *Volunteer*  
   * January 2021 - June 2022  
