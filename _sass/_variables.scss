@@ -54,7 +54,7 @@ $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
-$background-color: #faf2f2 !default;
+$background-color: #fff7f7 !default;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
 $text-color: #343434 !default;
@@ -172,3 +172,9 @@ $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $navicon-width              : 28px;
 $navicon-height             : 4px;
 $global-transition          : all 0.2s ease-in-out;
+
+::selection {
+    background: #e0e0e0; /* Light gray background */
+    color: #343434; /* Dark gray text */
+}
+
