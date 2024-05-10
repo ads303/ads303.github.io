@@ -15,4 +15,4 @@ redirect_from:
 [<img src="https://user-images.githubusercontent.com/108133717/195214144-cc665650-fcc0-4617-9222-91a27a422078.png" width="250" height="250">](https://www.frontiersin.org/articles/10.3389/fcell.2020.586296/full)
 [<img width="250" height="250" alt="hypoxia_paper" src="https://github.com/ads303/ads303.github.io/assets/108133717/695be431-1497-41b4-ac8b-55eb57421313">](https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109) 
 
-[![Helvetica World](https://github.com/ads303/ads303.github.io/assets/108133717/7d6a230f-3e46-4c9c-a65b-280db0665fc8)](www.google.com)
+[![Helvetica World](https://github.com/ads303/ads303.github.io/assets/108133717/7d6a230f-3e46-4c9c-a65b-280db0665fc8)](https://www.google.com)
