@@ -23,8 +23,15 @@ redirect_from:
 
 
 <a href="https://drive.google.com/file/d/1zDT8SljVkaakIwAQmuYeoem4uCU-HVHp/view?usp=sharing">
-    <img src="https://github.com/ads303/ads303.github.io/assets/108133717/309cf2fe-2f26-45e3-b242-34a04119d3fb" alt="Yellow and Blue Lined DNA Biology Educational Poster" width="300" height="500">
+    <img src="https://github.com/ads303/ads303.github.io/assets/108133717/309cf2fe-2f26-45e3-b242-34a04119d3fb" alt="Dean's Day 2023" width="353" height="500">
+</a>
+<a href=<"https://drive.google.com/file/d/13cvlDORNXAa__wPESLMQ7ugYil5KjM1f/view?usp=sharing">
+    <img src="https://github.com/ads303/ads303.github.io/assets/108133717/2705bed8-efa1-4c70-b7f4-f3ad7ec3da00" alt="i4Kids Symposium 2024" width="353" height="500">
 </a>
 
+
+
+
+![Copy of Yellow and Blue Lined DNA Biology Educational Poster](https://github.com/ads303/ads303.github.io/assets/108133717/2705bed8-efa1-4c70-b7f4-f3ad7ec3da00)
 
 
