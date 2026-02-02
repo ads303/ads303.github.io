@@ -45,3 +45,74 @@ redirect_from:
   </tr>
 </table>
 
+
+
+<style>
+.pub-year{ margin-top: 26px; }
+.pub-grid{ display:flex; flex-direction:column; gap:14px; margin-top:10px; }
+.pub-card{
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:14px;
+  padding:14px 16px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+  background:rgba(255,255,255,.9);
+}
+.pub-title{ font-weight:800; line-height:1.25; margin:0 0 6px 0; }
+.pub-meta{ opacity:.85; line-height:1.35; margin:0; }
+.pub-links{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
+.pub-badge{
+  font-size:.82rem;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.15);
+  text-decoration:none;
+}
+</style>
+
+{% assign pubs = site.data.pubs | sort: "Year" | reverse %}
+
+{% assign last_year = "" %}
+{% for p in pubs %}
+  {% assign year_str = p.Year | default: "" %}
+  {% if year_str != last_year %}
+    {% if last_year != "" %}
+</div>
+    {% endif %}
+<div class="pub-year">
+
+### {{ year_str }}
+
+<div class="pub-grid">
+    {% assign last_year = year_str %}
+  {% endif %}
+
+  {% capture scholar_q %}{{ p.Title | uri_escape }}{% endcapture %}
+  {% assign scholar_url = "https://scholar.google.com/scholar?q=" | append: scholar_q %}
+
+  <div class="pub-card">
+    <p class="pub-title">{{ p.Title }}</p>
+    <p class="pub-meta">{{ p.Authors }}</p>
+
+    <p class="pub-meta">
+      {{ p.Publication }}
+      {% if p.Volume %} · {{ p.Volume }}{% endif %}
+      {% if p.Number %}({{ p.Number }}){% endif %}
+      {% if p.Pages %} · {{ p.Pages }}{% endif %}
+      {% if p.Year %} · {{ p.Year }}{% endif %}
+    </p>
+
+    <div class="pub-links">
+      <a class="pub-badge" href="{{ scholar_url }}">Google Scholar</a>
+      {%- comment -%}
+      Optional: if you later add columns like URL, PDF, CODE:
+      {% if p.URL %}<a class="pub-badge" href="{{ p.URL }}">Paper</a>{% endif %}
+      {% if p.PDF %}<a class="pub-badge" href="{{ p.PDF }}">PDF</a>{% endif %}
+      {% if p.CODE %}<a class="pub-badge" href="{{ p.CODE }}">Code</a>{% endif %}
+      {%- endcomment -%}
+    </div>
+  </div>
+
+{% endfor %}
+</div>
+</div>
+
