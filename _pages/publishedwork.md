@@ -71,11 +71,11 @@ redirect_from:
 }
 </style>
 
-{% if site.data.pubs %}
-  {% assign pubs = site.data.pubs | sort: "Year" | reverse %}
+{% if site.data.citations %}
+  {% assign citations = site.data.citations | sort: "Year" | reverse %}
 
   {% assign last_year = "" %}
-  {% for p in pubs %}
+  {% for p in citations %}
     {% assign year_str = p.Year | default: "Other" %}
 
     {% if year_str != last_year %}
