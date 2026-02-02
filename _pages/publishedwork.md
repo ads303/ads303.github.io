@@ -8,7 +8,7 @@ redirect_from:
 
 {% include base_path %}
 
-**Papers**
+**Library**
 
 <table>
   <tr>
@@ -22,30 +22,6 @@ redirect_from:
     <td><a href="https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109"><img src="https://github.com/ads303/ads303.github.io/assets/108133717/1efc96f0-3ac3-49f5-b4c7-7a384c767857" width="280" height="438"></a></td>
   </tr>
 </table>
-
-**Posters**
-
-<table>
-  <tr>
-    <td>
-      <a href="https://drive.google.com/file/d/1zDT8SljVkaakIwAQmuYeoem4uCU-HVHp/view?usp=sharing">
-        <img src="https://github.com/ads303/ads303.github.io/assets/108133717/309cf2fe-2f26-45e3-b242-34a04119d3fb" alt="Dean's Day 2023" width="282" height="400">
-      </a>
-    </td>
-    <td>
-      <a href="https://drive.google.com/file/d/13cvlDORNXAa__wPESLMQ7ugYil5KjM1f/view?usp=sharing">
-        <img src="https://github.com/ads303/ads303.github.io/assets/108133717/2705bed8-efa1-4c70-b7f4-f3ad7ec3da00" alt="i4Kids Symposium 2024" width="282" height="400">
-      </a>
-    </td>
-    <td>
-      <a href="https://drive.google.com/file/d/1hc0qQYMdidF0I2nh-f3Csm9dhTKvURCD/view?usp=sharing">
-        <img src="https://github.com/ads303/ads303.github.io/assets/108133717/9453033d-e416-412d-965f-49988409dab4" alt="STATGEN 2024" width="282" height="400">
-      </a>
-    </td>
-  </tr>
-</table>
-
-
 
 ## Publications
 
