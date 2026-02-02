@@ -72,47 +72,45 @@ redirect_from:
 </style>
 
 {% if site.data.citations %}
-  {% assign citations = site.data.citations | sort: "Year" | reverse %}
+{% assign pubs = site.data.citations | sort: "Year" | reverse %}
+{% assign last_year = "" %}
 
-  {% assign last_year = "" %}
-  {% for p in citations %}
-    {% assign year_str = p.Year | default: "Other" %}
+{% for p in pubs %}
+{% assign year_str = p.Year | default: "Other" %}
 
-    {% if year_str != last_year %}
-      {% if last_year != "" %}
-        </div></div>
-      {% endif %}
-
-      <div class="pub-year">
-        <h3>{{ year_str }}</h3>
-        <div class="pub-grid">
-      {% assign last_year = year_str %}
-    {% endif %}
-
-    {% capture scholar_q %}{{ p.Title | cgi_escape }}{% endcapture %}
-    {% assign scholar_url = "https://scholar.google.com/scholar?q=" | append: scholar_q %}
-
-    <div class="pub-card">
-      <p class="pub-title">{{ p.Title }}</p>
-      {% if p.Authors %}<p class="pub-meta">{{ p.Authors }}</p>{% endif %}
-
-      <p class="pub-meta">
-        {{ p.Publication }}
-        {% if p.Volume %} · {{ p.Volume }}{% endif %}
-        {% if p.Number %}({{ p.Number }}){% endif %}
-        {% if p.Pages %} · {{ p.Pages }}{% endif %}
-        {% if p.Year %} · {{ p.Year }}{% endif %}
-      </p>
-
-      <div class="pub-links">
-        <a class="pub-badge" href="{{ scholar_url }}">Google Scholar</a>
-      </div>
-    </div>
-
-  {% endfor %}
-
-  </div></div>
-{% else %}
-  <p><em>No publications found. Make sure your CSV is at <code>_data/citations.csv</code>.</em></p>
+{% if year_str != last_year %}
+{% if last_year != "" %}
+</div></div>
+{% endif %}
+<div class="pub-year">
+<h3>{{ year_str }}</h3>
+<div class="pub-grid">
+{% assign last_year = year_str %}
 {% endif %}
 
+{% capture scholar_q %}{{ p.Title | cgi_escape }}{% endcapture %}
+{% assign scholar_url = "https://scholar.google.com/scholar?q=" | append: scholar_q %}
+
+<div class="pub-card">
+<p class="pub-title">{{ p.Title }}</p>
+{% if p.Authors %}<p class="pub-meta">{{ p.Authors }}</p>{% endif %}
+
+<p class="pub-meta">
+{{ p.Publication }}
+{% if p.Volume %} · {{ p.Volume }}{% endif %}
+{% if p.Number %}({{ p.Number }}){% endif %}
+{% if p.Pages %} · {{ p.Pages }}{% endif %}
+{% if p.Year %} · {{ p.Year }}{% endif %}
+</p>
+
+<div class="pub-links">
+<a class="pub-badge" href="{{ scholar_url }}">Google Scholar</a>
+</div>
+</div>
+
+{% endfor %}
+
+</div></div>
+{% else %}
+<p><em>No publications found. Make sure your CSV is at <code>_data/citations.csv</code>.</em></p>
+{% endif %}
