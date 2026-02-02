@@ -47,6 +47,8 @@ redirect_from:
 
 
 
+## Publications
+
 <style>
 .pub-year{ margin-top: 26px; }
 .pub-grid{ display:flex; flex-direction:column; gap:14px; margin-top:10px; }
@@ -69,50 +71,48 @@ redirect_from:
 }
 </style>
 
-{% assign pubs = site.data.pubs | sort: "Year" | reverse %}
+{% if site.data.pubs %}
+  {% assign pubs = site.data.pubs | sort: "Year" | reverse %}
 
-{% assign last_year = "" %}
-{% for p in pubs %}
-  {% assign year_str = p.Year | default: "" %}
-  {% if year_str != last_year %}
-    {% if last_year != "" %}
-</div>
+  {% assign last_year = "" %}
+  {% for p in pubs %}
+    {% assign year_str = p.Year | default: "Other" %}
+
+    {% if year_str != last_year %}
+      {% if last_year != "" %}
+        </div></div>
+      {% endif %}
+
+      <div class="pub-year">
+        <h3>{{ year_str }}</h3>
+        <div class="pub-grid">
+      {% assign last_year = year_str %}
     {% endif %}
-<div class="pub-year">
 
-### {{ year_str }}
+    {% capture scholar_q %}{{ p.Title | cgi_escape }}{% endcapture %}
+    {% assign scholar_url = "https://scholar.google.com/scholar?q=" | append: scholar_q %}
 
-<div class="pub-grid">
-    {% assign last_year = year_str %}
-  {% endif %}
+    <div class="pub-card">
+      <p class="pub-title">{{ p.Title }}</p>
+      {% if p.Authors %}<p class="pub-meta">{{ p.Authors }}</p>{% endif %}
 
-  {% capture scholar_q %}{{ p.Title | uri_escape }}{% endcapture %}
-  {% assign scholar_url = "https://scholar.google.com/scholar?q=" | append: scholar_q %}
+      <p class="pub-meta">
+        {{ p.Publication }}
+        {% if p.Volume %} · {{ p.Volume }}{% endif %}
+        {% if p.Number %}({{ p.Number }}){% endif %}
+        {% if p.Pages %} · {{ p.Pages }}{% endif %}
+        {% if p.Year %} · {{ p.Year }}{% endif %}
+      </p>
 
-  <div class="pub-card">
-    <p class="pub-title">{{ p.Title }}</p>
-    <p class="pub-meta">{{ p.Authors }}</p>
-
-    <p class="pub-meta">
-      {{ p.Publication }}
-      {% if p.Volume %} · {{ p.Volume }}{% endif %}
-      {% if p.Number %}({{ p.Number }}){% endif %}
-      {% if p.Pages %} · {{ p.Pages }}{% endif %}
-      {% if p.Year %} · {{ p.Year }}{% endif %}
-    </p>
-
-    <div class="pub-links">
-      <a class="pub-badge" href="{{ scholar_url }}">Google Scholar</a>
-      {%- comment -%}
-      Optional: if you later add columns like URL, PDF, CODE:
-      {% if p.URL %}<a class="pub-badge" href="{{ p.URL }}">Paper</a>{% endif %}
-      {% if p.PDF %}<a class="pub-badge" href="{{ p.PDF }}">PDF</a>{% endif %}
-      {% if p.CODE %}<a class="pub-badge" href="{{ p.CODE }}">Code</a>{% endif %}
-      {%- endcomment -%}
+      <div class="pub-links">
+        <a class="pub-badge" href="{{ scholar_url }}">Google Scholar</a>
+      </div>
     </div>
-  </div>
 
-{% endfor %}
-</div>
-</div>
+  {% endfor %}
+
+  </div></div>
+{% else %}
+  <p><em>No publications found. Make sure your CSV is at <code>_data/pubs.csv</code>.</em></p>
+{% endif %}
 
