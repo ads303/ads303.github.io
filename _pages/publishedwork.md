@@ -113,6 +113,6 @@ redirect_from:
 
   </div></div>
 {% else %}
-  <p><em>No publications found. Make sure your CSV is at <code>_data/pubs.csv</code>.</em></p>
+  <p><em>No publications found. Make sure your CSV is at <code>_data/citations.csv</code>.</em></p>
 {% endif %}
 
