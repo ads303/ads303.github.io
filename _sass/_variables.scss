@@ -66,7 +66,7 @@ $primary-color              : #343434;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
-$info-color                 : #52adc8;
+$info-color                 : #ddebef;
 
 /* dirt syntax highlighting (base16) */
 $base00: #231e18 !default;
@@ -172,14 +172,4 @@ $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $navicon-width              : 28px;
 $navicon-height             : 4px;
 $global-transition          : all 0.2s ease-in-out;
-
-::selection {
-  background: rgba(233, 220, 190, 0.6);
-  color: $text-color;
-}
-
-::-moz-selection {
-  background: rgba(233, 220, 190, 0.6);
-  color: $text-color;
-}
 
