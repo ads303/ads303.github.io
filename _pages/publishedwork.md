@@ -8,26 +8,132 @@ redirect_from:
 
 {% include base_path %}
 
-**Library**
+## Library
 
-<table>
-    <tr>
-    <td><a href="https://www.worldscientific.com/doi/10.1142/9789819824755_0052?srsltid=AfmBOorR7n7Kjfl0sr-UYOVmlmECvvyHwnEhPiNiCU95VT7JG2j5rZMd"><img src="https://github.com/user-attachments/assets/c296bcd8-7cc5-4e89-b937-b4e1b39bf824" width="192" height="300"></a></td>
-    <td><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2837768"><img src="https://github.com/user-attachments/assets/3ba46f11-0555-4069-9992-d2f3eddb3493" width="192" height="300"></a></td>    
-    <td><a href="https://www.medrxiv.org/content/10.1101/2024.10.15.24315572v1"><img src="https://github.com/user-attachments/assets/d08dec03-ee6a-4e1c-a04f-a215fc650619" width="192" height="300"></a></td>
-    <td><a href="https://www.biorxiv.org/content/10.1101/2024.10.21.619471v1"><img src="https://github.com/user-attachments/assets/abf1ba4b-47e1-4afb-a86e-37a0061ab911" width="192" height="300"></a></td>
-  </tr>
-  <tr>
-    <td><a href="https://www.ahajournals.org/doi/10.1161/ATVBAHA.123.320367"><img src="https://github.com/user-attachments/assets/49bf8a5d-dfec-4042-9bca-2f6181c63811" width="192" height="300"></a></td>
-    <td><a href="https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109"><img src="https://github.com/user-attachments/assets/eb70be59-8024-479b-9446-b8358f0a68bb" width="192" height="300"></a></td>
-    <td><a href="https://www.frontiersin.org/articles/10.3389/fped.2023.1035576/full"><img src="https://github.com/user-attachments/assets/0dbbcba7-d562-4bb1-bd01-86d526cf1b5a" width="192" height="300"></a></td>    
-    <td><a href="https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad044/7217083"><img src="https://github.com/user-attachments/assets/2270287e-6946-4ec1-81d6-38502bf66567" width="192" height="300"></a></td>
-  </tr>
-  <tr>
-    <td><a href="https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html"><img src="https://github.com/user-attachments/assets/da36e6f0-25cf-4cb1-9499-858d04b7e28b" width="192" height="300"></a></td>
-    <td><a href="https://www.frontiersin.org/articles/10.3389/fcell.2020.586296/full"><img src="https://github.com/user-attachments/assets/46f429da-f8b5-4f53-8155-002767545112" width="192" height="300"></a></td>
-  </tr>
-</table>
+<style>
+/* --- Windows 8 / Metro tile wall --- */
+.tile-wall{
+  --gap: 14px;
+  --tile-r: 10px;
+  --tile-shadow: 0 18px 50px rgba(0,0,0,.12);
+  --tile-shadow-hover: 0 26px 70px rgba(0,0,0,.18);
+
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
+  margin: 14px 0 28px 0;
+}
+
+/* responsive breakpoints */
+@media (max-width: 980px){
+  .tile-wall{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 540px){
+  .tile-wall{ grid-template-columns: 1fr; }
+}
+
+.tile{
+  position: relative;
+  display:block;
+  border-radius: var(--tile-r);
+  overflow:hidden;
+  background: rgba(255,255,255,.9);
+  border: 1px solid rgba(0,0,0,.10);
+  box-shadow: var(--tile-shadow);
+
+  /* The “panel” sizing */
+  aspect-ratio: 3 / 4; /* default: portrait-ish like covers */
+  transform: translateZ(0);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+.tile:hover{
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: var(--tile-shadow-hover);
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.tile img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit: cover;       /* makes it “installation” style */
+  object-position: center; /* tweak per tile if needed */
+}
+
+/* Optional: “logo tiles” (centered, less crop) */
+.tile.logo{
+  background: #fff;
+}
+.tile.logo img{
+  object-fit: contain;
+  padding: 16px;
+  background: #fff;
+}
+
+/* Optional: larger tiles for visual rhythm */
+.tile.wide{ aspect-ratio: 4 / 3; }  /* landscape panel */
+.tile.tall{ aspect-ratio: 2 / 3; }  /* tall portrait */
+.tile.big{ grid-column: span 2; aspect-ratio: 16 / 9; } /* hero tile */
+@media (max-width: 980px){
+  .tile.big{ grid-column: span 1; aspect-ratio: 4 / 3; }
+}
+
+/* Optional: subtle top-left “glow” like glass */
+.tile::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background: radial-gradient(1200px 500px at 10% 0%,
+            rgba(255,255,255,.22), transparent 50%);
+  opacity:.9;
+}
+</style>
+
+<div class="tile-wall">
+
+  <a class="tile" href="https://www.worldscientific.com/doi/10.1142/9789819824755_0052?srsltid=AfmBOorR7n7Kjfl0sr-UYOVmlmECvvyHwnEhPiNiCU95VT7JG2j5rZMd">
+    <img src="https://github.com/user-attachments/assets/c296bcd8-7cc5-4e89-b937-b4e1b39bf824" alt="Pacific Symposium on Biocomputing 2026">
+  </a>
+
+  <a class="tile logo" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2837768">
+    <img src="https://github.com/user-attachments/assets/3ba46f11-0555-4069-9992-d2f3eddb3493" alt="JAMA Network Open">
+  </a>
+
+  <a class="tile logo" href="https://www.medrxiv.org/content/10.1101/2024.10.15.24315572v1">
+    <img src="https://github.com/user-attachments/assets/d08dec03-ee6a-4e1c-a04f-a215fc650619" alt="medRxiv">
+  </a>
+
+  <a class="tile logo" href="https://www.biorxiv.org/content/10.1101/2024.10.21.619471v1">
+    <img src="https://github.com/user-attachments/assets/abf1ba4b-47e1-4afb-a86e-37a0061ab911" alt="bioRxiv">
+  </a>
+
+  <a class="tile" href="https://www.ahajournals.org/doi/10.1161/ATVBAHA.123.320367">
+    <img src="https://github.com/user-attachments/assets/49bf8a5d-dfec-4042-9bca-2f6181c63811" alt="ATVB">
+  </a>
+
+  <a class="tile logo" href="https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109">
+    <img src="https://github.com/user-attachments/assets/eb70be59-8024-479b-9446-b8358f0a68bb" alt="Stroke supplement">
+  </a>
+
+  <a class="tile" href="https://www.frontiersin.org/articles/10.3389/fped.2023.1035576/full">
+    <img src="https://github.com/user-attachments/assets/0dbbcba7-d562-4bb1-bd01-86d526cf1b5a" alt="Frontiers in Pediatrics">
+  </a>
+
+  <a class="tile" href="https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad044/7217083">
+    <img src="https://github.com/user-attachments/assets/2270287e-6946-4ec1-81d6-38502bf66567" alt="GigaScience">
+  </a>
+
+  <a class="tile" href="https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html">
+    <img src="https://github.com/user-attachments/assets/da36e6f0-25cf-4cb1-9499-858d04b7e28b" alt="Journal of Biology and Today's World">
+  </a>
+
+  <a class="tile" href="https://www.frontiersin.org/articles/10.3389/fcell.2020.586296/full">
+    <img src="https://github.com/user-attachments/assets/46f429da-f8b5-4f53-8155-002767545112" alt="Frontiers in Cell and Developmental Biology">
+  </a>
+
+</div>
 
 ## Publications
 
