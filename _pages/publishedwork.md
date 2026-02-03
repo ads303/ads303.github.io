@@ -32,24 +32,48 @@ redirect_from:
 ## Publications
 
 <style>
-.pub-year{ margin-top: 26px; }
-.pub-grid{ display:flex; flex-direction:column; gap:14px; margin-top:10px; }
-.pub-card{
-  border:1px solid rgba(0,0,0,.12);
-  border-radius:14px;
-  padding:14px 16px;
-  box-shadow:0 6px 18px rgba(0,0,0,.06);
-  background:rgba(255,255,255,.9);
+.pub-year {
+  margin-top: 22px;
 }
-.pub-title{ font-weight:800; line-height:1.25; margin:0 0 6px 0; }
-.pub-meta{ opacity:.85; line-height:1.35; margin:0; }
-.pub-links{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
-.pub-badge{
-  font-size:.82rem;
-  padding:4px 8px;
-  border-radius:999px;
-  border:1px solid rgba(0,0,0,.15);
-  text-decoration:none;
+
+.pub-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;              /* tighter spacing between items */
+  margin-top: 6px;
+}
+
+.pub-card {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 8px;     /* smaller radius */
+  padding: 8px 12px;     /* MUCH slimmer */
+  background: #fff;
+}
+
+.pub-title {
+  font-weight: 700;
+  font-size: 0.98rem;    /* slightly smaller */
+  line-height: 1.3;
+  margin: 0 0 2px 0;
+}
+
+.pub-meta {
+  font-size: 0.88rem;
+  opacity: 0.8;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.pub-links {
+  margin-top: 4px;
+}
+
+.pub-badge {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,.18);
+  text-decoration: none;
 }
 </style>
 
