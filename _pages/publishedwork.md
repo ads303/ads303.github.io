@@ -44,10 +44,9 @@ redirect_from:
 }
 
 .pub-card {
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: 8px;     /* smaller radius */
-  padding: 8px 12px;     /* MUCH slimmer */
-  background: #fff;
+  border-left: 3px solid rgba(0,0,0,.15);
+  padding: 6px 10px;
+  background: none;
 }
 
 .pub-title {
