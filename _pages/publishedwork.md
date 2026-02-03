@@ -12,14 +12,14 @@ redirect_from:
 
 <table>
   <tr>
-    <td><a href="https://www.ahajournals.org/doi/10.1161/ATVBAHA.123.320367"><img src="https://github.com/user-attachments/assets/49bf8a5d-dfec-4042-9bca-2f6181c63811" width="280" height="438"></a></td>
-    <td><a href="https://www.frontiersin.org/articles/10.3389/fped.2023.1035576/full"><img src="https://github.com/user-attachments/assets/0dbbcba7-d562-4bb1-bd01-86d526cf1b5a" width="280" height="438"></a></td>    
-    <td><a href="https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad044/7217083"><img src="https://github.com/ads303/ads303.github.io/assets/108133717/0d7d5f8c-774e-4ed9-83ba-3507b7218182" width="280" height="438"></a></td>
+    <td><a href="https://www.ahajournals.org/doi/10.1161/ATVBAHA.123.320367"><img src="https://github.com/user-attachments/assets/49bf8a5d-dfec-4042-9bca-2f6181c63811" width="192" height="300"></a></td>
+    <td><a href="https://www.frontiersin.org/articles/10.3389/fped.2023.1035576/full"><img src="https://github.com/user-attachments/assets/0dbbcba7-d562-4bb1-bd01-86d526cf1b5a" width="192" height="300"></a></td>    
+    <td><a href="https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad044/7217083"><img src="https://github.com/user-attachments/assets/2270287e-6946-4ec1-81d6-38502bf66567" width="192" height="300"></a></td>
+    <td><a href="https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html"><img src="https://github.com/user-attachments/assets/da36e6f0-25cf-4cb1-9499-858d04b7e28b" width="192" height="300"></a></td>
   </tr>
   <tr>
-    <td><a href="https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html"><img src="https://github.com/ads303/ads303.github.io/assets/108133717/06935cf9-1af9-4339-af71-c64e6dfebc92" width="280" height="438"></a></td>
-    <td><a href="https://www.frontiersin.org/articles/10.3389/fcell.2020.586296/full"><img src="https://github.com/ads303/ads303.github.io/assets/108133717/f7a99030-7a33-4777-84c2-4f47b308d7d4" width="280" height="438"></a></td>
-    <td><a href="https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109"><img src="https://github.com/ads303/ads303.github.io/assets/108133717/1efc96f0-3ac3-49f5-b4c7-7a384c767857" width="280" height="438"></a></td>
+    <td><a href="https://www.frontiersin.org/articles/10.3389/fcell.2020.586296/full"><img src="https://github.com/user-attachments/assets/46f429da-f8b5-4f53-8155-002767545112" width="192" height="300"></a></td>
+    <td><a href="https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109"><img src="https://github.com/user-attachments/assets/eb70be59-8024-479b-9446-b8358f0a68bb" width="192" height="300"></a></td>
   </tr>
 </table>
 
