@@ -12,7 +12,8 @@ redirect_from:
 
 <table>
   <tr>
-    <td><a href="https://www.ahajournals.org/doi/10.1161/ATVBAHA.123.320367"><img src="https://github.com/user-attachments/assets/068ed3e2-69e8-49fa-9d28-a5f7d6ab82f8)" width="280" height="438"></a></td>
+    <td><a href="https://www.ahajournals.org/doi/10.1161/ATVBAHA.123.320367">![atvb](https://github.com/user-attachments/assets/0553dca0-e615-4854-b93a-fdb3659b0228)
+
     <td><a href="https://www.frontiersin.org/articles/10.3389/fped.2023.1035576/full"><img src="https://github.com/ads303/ads303.github.io/assets/108133717/978b1c1c-41b5-4c9a-ab84-223df51dd856" width="280" height="438"></a></td>
     <td><a href="https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad044/7217083"><img src="https://github.com/ads303/ads303.github.io/assets/108133717/0d7d5f8c-774e-4ed9-83ba-3507b7218182" width="280" height="438"></a></td>
   </tr>
