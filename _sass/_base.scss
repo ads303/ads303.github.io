@@ -6,6 +6,15 @@ html {
   position: relative;
   min-height: 100%;
 }
+::selection {
+  background: rgba(233, 220, 190, 0.6);
+  color: $text-color;
+}
+
+::-moz-selection {
+  background: rgba(233, 220, 190, 0.6);
+  color: $text-color;
+}
 
 body {
   margin: 0;
