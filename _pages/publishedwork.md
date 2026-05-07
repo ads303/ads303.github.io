@@ -101,6 +101,10 @@ redirect_from:
     <img src="https://github.com/user-attachments/assets/3ba46f11-0555-4069-9992-d2f3eddb3493" alt="JAMA Network Open">
   </a>
 
+  <a class="tile logo" href="https://www.science.org/doi/10.1126/sciadv.ady3555">
+    <img src="https://github.com/user-attachments/assets/3015bdee-227d-4f1d-86fd-14ad2b140511" alt="Science Advances">
+  </a>
+
   <a class="tile logo" href="https://www.medrxiv.org/content/10.1101/2024.10.15.24315572v1">
     <img src="https://github.com/user-attachments/assets/d08dec03-ee6a-4e1c-a04f-a215fc650619" alt="medRxiv">
   </a>
