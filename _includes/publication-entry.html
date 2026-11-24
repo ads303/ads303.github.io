@@ -1,0 +1,13 @@
+{% assign p = include.publication %}
+<article class="publication-entry" id="{{ p.id }}">
+  <h4><a href="{{ p.url }}">{{ p.title | escape }}</a></h4>
+  <p class="publication-authors">{{ p.authors | escape | replace: 'Sriram AD', '<strong>Sriram AD</strong>' | replace: 'Sriram A,', '<strong>Sriram A</strong>,' }}</p>
+  <p class="publication-citation"><em>{{ p.venue | escape }}</em>{% if p.citation %} · {{ p.citation | escape }}{% endif %} · {{ p.year }}{% if p.type %} · {{ p.type }}{% endif %}{% if p.status == 'preprint' %} · Preprint{% endif %}{% if p.status == 'in-press' %} · In press{% endif %}{% if p.status == 'abstract' %} · Conference abstract{% endif %}</p>
+  {% if p.note %}<p class="publication-note">{{ p.note }}</p>{% endif %}
+  <div class="publication-links">
+    <a href="{{ p.url }}">{{ p.link_label | default: 'Read paper' }}</a>
+    {% if p.pdf_url %}<a href="{{ p.pdf_url }}">PDF</a>{% endif %}
+    {% if p.resource_url %}<a href="{{ p.resource_url }}">{{ p.resource_label }}</a>{% endif %}
+    {% if p.preprint_url and p.status == 'published' %}<a href="{{ p.preprint_url }}">Earlier preprint</a>{% endif %}
+  </div>
+</article>

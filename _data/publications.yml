@@ -1,0 +1,227 @@
+# Curated bibliography. See docs/publication-data.md before adding records.
+# date is the first online publication date of this version, not the issue year.
+- id: eqtm-atlas
+  title: 'eQTM (expression quantitative trait methylation) Atlas: a comprehensive resource of over 11 million DNA methylation-gene expression associations through across 11 tissues and 4 diseases'
+  short_title: eQTM Atlas
+  authors: 'Sriram A, Kim S, Caldino Bohn R, Chen W, Liu T, Yue M, Jain N, Pierce BL, Joehanes R, Levy D, Patin E, Quintana-Murci L, Park HJ, Celedón JC.'
+  venue: bioRxiv
+  year: 2026
+  date: '2026-06-10'
+  status: preprint
+  doi: 10.64898/2026.06.07.730721
+  url: https://doi.org/10.64898/2026.06.07.730721
+  cover_label: eQTM Atlas
+  source_url: https://pubmed.ncbi.nlm.nih.gov/42327319/
+  date_source: https://pubmed.ncbi.nlm.nih.gov/42327319/
+  resource_url: https://shiny.crc.pitt.edu/eqtm_browser/
+  resource_label: Explore the atlas
+
+- id: genetic-anchors-asthma
+  title: Estimating in silico causal effects of DNA methylation on gene expression through genetic anchors in airway epithelium in asthma
+  short_title: Genetic anchors in asthma
+  authors: 'Kim S, Caldino Bohn RI, Sriram A, Park HJ, Huang Z, Chen W, Celedón JC.'
+  venue: Science Advances
+  citation: '12(17): eady3555'
+  year: 2026
+  date: '2026-04-22'
+  status: published
+  doi: 10.1126/sciadv.ady3555
+  url: https://doi.org/10.1126/sciadv.ady3555
+  image: https://github.com/user-attachments/assets/3015bdee-227d-4f1d-86fd-14ad2b140511
+  image_alt: Science Advances
+  source_url: https://pubmed.ncbi.nlm.nih.gov/42018614/
+  date_source: https://pubmed.ncbi.nlm.nih.gov/42018614/
+
+- id: deepdiff-shap
+  title: 'DeepDiff-SHAP: Interpretable deep learning for subgroup-specific causal hypothesis generation using conditional SHAP'
+  short_title: DeepDiff-SHAP
+  authors: 'Sriram A, Kim S, Carcillo JA, Park HJ.'
+  venue: Pacific Symposium on Biocomputing
+  citation: '31: 722–737'
+  year: 2026
+  date: '2025-12-14'
+  status: published
+  type: Conference paper
+  doi: 10.1142/9789819824755_0052
+  url: https://doi.org/10.1142/9789819824755_0052
+  image: https://github.com/user-attachments/assets/c296bcd8-7cc5-4e89-b937-b4e1b39bf824
+  image_alt: Pacific Symposium on Biocomputing 2026
+  source_url: https://pubmed.ncbi.nlm.nih.gov/41758180/
+  date_source: https://api.crossref.org/works/10.1142/9789819824755_0052
+  pdf_url: https://psb.stanford.edu/psb-online/proceedings/psb26/sriram.pdf
+  preprint_url: https://doi.org/10.1101/2025.08.14.670190
+
+- id: deepexpoke
+  title: 'DeepEXPOKE: A Deep Learning Framework with Polygenic Risk Scores as Knockoffs for Deconvoluting Genetic and Non-Genetic Exposure Risks in Sepsis and Coronary Heart Disease'
+  short_title: DeepEXPOKE
+  authors: 'Sriram A, Caldino Bohn R, Kernan KF, Di YP, Hsu DJ, Habibzadeh P, Carcillo JA, Kim S, Park HJ.'
+  venue: Genome Medicine
+  year: 2026
+  date: null
+  status: in-press
+  doi: null
+  url: https://doi.org/10.1101/2024.10.15.24315572
+  link_label: Read the preprint
+  image: https://github.com/user-attachments/assets/d08dec03-ee6a-4e1c-a04f-a215fc650619
+  image_alt: medRxiv preprint of DeepEXPOKE
+  source_url: /assets/Aditya_Sriram_CV_updated10-01-2026.pdf
+  date_source: null
+  preprint_date: '2024-10-16'
+  preprint_date_source: https://api.crossref.org/works/10.1101/2024.10.15.24315572
+  preprint_url: https://doi.org/10.1101/2024.10.15.24315572
+  note: In press at Genome Medicine; the linked version is the medRxiv preprint.
+
+- id: ebv-pediatric-sepsis
+  title: Epstein-Barr Virus Seropositivity, Immune Dysregulation, and Mortality in Pediatric Sepsis
+  short_title: Epstein-Barr virus & pediatric sepsis
+  authors: 'Sriram A, Kernan KF, Qin Y, et al.'
+  venue: JAMA Network Open
+  citation: '8(8): e2527487'
+  year: 2025
+  date: '2025-08-19'
+  status: published
+  doi: 10.1001/jamanetworkopen.2025.27487
+  url: https://doi.org/10.1001/jamanetworkopen.2025.27487
+  image: https://github.com/user-attachments/assets/3ba46f11-0555-4069-9992-d2f3eddb3493
+  image_alt: JAMA Network Open
+  source_url: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2837768
+  date_source: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2837768
+
+- id: microbiome-network
+  title: 'Unveiling the Gut Microbiome Network Fingerprint: A Deep Learning Approach to Predict Immunotherapy Response in Melanoma Patients'
+  short_title: Gut microbiome network fingerprint
+  authors: 'Sun J, Fan Z, Sriram A, Park HJ.'
+  venue: bioRxiv
+  year: 2024
+  date: '2024-10-21'
+  status: preprint
+  doi: 10.1101/2024.10.21.619471
+  url: https://doi.org/10.1101/2024.10.21.619471
+  image: https://github.com/user-attachments/assets/abf1ba4b-47e1-4afb-a86e-37a0061ab911
+  image_alt: bioRxiv
+  source_url: https://www.biorxiv.org/content/10.1101/2024.10.21.619471v1
+  date_source: https://api.crossref.org/works/10.1101/2024.10.21.619471
+
+- id: hypoxia-ccm
+  title: Mild Hypoxia Accelerates Cerebral Cavernous Malformation Disease Through CX3CR1-CX3CL1 Signaling
+  short_title: Hypoxia & cavernous malformation
+  authors: 'Frias-Anaya E, Gallego-Gutierrez H, Gongol B, Weinsheimer S, Lai CC, Orecchioni M, Sriram A, et al.'
+  venue: Arteriosclerosis, Thrombosis, and Vascular Biology
+  citation: '44(6): 1246–1264'
+  year: 2024
+  date: '2024-04-25'
+  status: published
+  doi: 10.1161/ATVBAHA.123.320367
+  url: https://doi.org/10.1161/ATVBAHA.123.320367
+  image: https://github.com/user-attachments/assets/49bf8a5d-dfec-4042-9bca-2f6181c63811
+  image_alt: Arteriosclerosis, Thrombosis, and Vascular Biology
+  source_url: https://pubmed.ncbi.nlm.nih.gov/38660801/
+  date_source: https://pubmed.ncbi.nlm.nih.gov/38660801/
+
+- id: dag-deepvase
+  title: Deep neural networks with knockoff features identify nonlinear causal relations and estimate effect sizes in complex biological systems
+  short_title: DAG-deepVASE
+  authors: 'Fan Z, Kernan KF, Sriram A, Benos PV, Canna SW, Carcillo JA, Kim S, Park HJ.'
+  venue: GigaScience
+  citation: '12: giad044'
+  year: 2023
+  date: '2023-07-03'
+  status: published
+  doi: 10.1093/gigascience/giad044
+  url: https://doi.org/10.1093/gigascience/giad044
+  image: https://github.com/user-attachments/assets/2270287e-6946-4ec1-81d6-38502bf66567
+  image_alt: GigaScience
+  source_url: https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad044/7217083
+  date_source: https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad044/7217083
+
+- id: sepsis-subgroups
+  title: Refining empiric subgroups of pediatric sepsis using machine-learning techniques on observational data
+  short_title: Refining pediatric sepsis subgroups
+  authors: 'Qin Y, Caldino Bohn RI, Sriram A, Kernan KF, Carcillo JA, Kim S, Park HJ.'
+  venue: Frontiers in Pediatrics
+  citation: '11: 1035576'
+  year: 2023
+  date: '2023-01-30'
+  status: published
+  type: Review
+  doi: 10.3389/fped.2023.1035576
+  url: https://doi.org/10.3389/fped.2023.1035576
+  image: https://github.com/user-attachments/assets/0dbbcba7-d562-4bb1-bd01-86d526cf1b5a
+  image_alt: Frontiers in Pediatrics
+  source_url: https://pubmed.ncbi.nlm.nih.gov/36793336/
+  date_source: https://pubmed.ncbi.nlm.nih.gov/36793336/
+
+- id: sars-cov2-risk
+  title: Genetic Risk Factors Associated with SARS-CoV-2 Susceptibility in Multiethnic Populations
+  short_title: Genetic risk & SARS-CoV-2
+  authors: 'Sriram AD, Kerr KF.'
+  venue: Journal of Biology and Today's World
+  citation: '11(4): 001–004'
+  year: 2022
+  date: '2022-08-12'
+  status: published
+  doi: 10.35248/2322-3308-11.4.003
+  url: https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html
+  image: https://github.com/user-attachments/assets/da36e6f0-25cf-4cb1-9499-858d04b7e28b
+  image_alt: Journal of Biology and Today's World
+  source_url: https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations-93385.html
+  date_source: https://www.iomcworld.org/articles/genetic-risk-factors-associated-with-sarscov2-susceptibility-in-multiethnic-populations.pdf
+
+- id: lesion-burden-ccm
+  title: Biological Pathways Enriched for Genes Associated with Lesion Burden in Cerebral Cavernous Malformation
+  short_title: Genetic pathways & lesion burden
+  authors: 'Sriram A, Weinsheimer S, Nelson J, Mabray M, Zabramski JM, Akers A, Hart B, Morrison L, McCulloch CE, Kim H.'
+  venue: Stroke
+  citation: '53(Suppl 1): A109'
+  year: 2022
+  date: null
+  status: abstract
+  doi: 10.1161/str.53.suppl_1.109
+  url: https://doi.org/10.1161/str.53.suppl_1.109
+  image: https://github.com/user-attachments/assets/eb70be59-8024-479b-9446-b8358f0a68bb
+  image_alt: Stroke conference supplement
+  source_url: https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109
+  date_source: null
+
+- id: zebrafish-autism
+  title: Assessment of Autism Zebrafish Mutant Models Using a High-Throughput Larval Phenotyping Platform
+  short_title: Zebrafish models of autism
+  authors: 'Colón-Rodríguez A, Uribe-Salazar JM, Weyenberg KB, Sriram A, Quezada A, Kaya G, Jao E, Radke B, Lein PJ, Dennis MY.'
+  venue: Frontiers in Cell and Developmental Biology
+  citation: '8: 586296'
+  year: 2020
+  date: '2020-11-23'
+  status: published
+  doi: 10.3389/fcell.2020.586296
+  url: https://doi.org/10.3389/fcell.2020.586296
+  image: https://github.com/user-attachments/assets/46f429da-f8b5-4f53-8155-002767545112
+  image_alt: Frontiers in Cell and Developmental Biology
+  source_url: https://pubmed.ncbi.nlm.nih.gov/33330465/
+  date_source: https://pubmed.ncbi.nlm.nih.gov/33330465/
+
+- id: marine-extinction
+  title: Body Size Preference of Marine Animals in Relation to Extinction Selectivity
+  authors: 'Sriram A, Idgunji S, Heim NA, Payne J.'
+  venue: AGU Fall Meeting Abstracts
+  citation: ED41A-3412
+  year: 2014
+  date: null
+  status: abstract
+  doi: null
+  url: https://studio.m-anage.com/agu/fm14/preliminaryview.cgi/Paper10788.html
+  source_url: https://studio.m-anage.com/agu/fm14/preliminaryview.cgi/Paper10788.html
+  date_source: null
+
+- id: ostracod-biomass
+  title: Ostracod Body Size as a Variable of Biomass
+  authors: 'Pathi A, Sriram A, Guo D, Heim NA, Payne J.'
+  venue: AGU Fall Meeting Abstracts
+  citation: ED41A-0713
+  year: 2013
+  date: null
+  status: abstract
+  doi: null
+  url: https://sedpaleo.org/HeimCV.pdf
+  link_label: Bibliographic record
+  source_url: https://sedpaleo.org/HeimCV.pdf
+  date_source: null

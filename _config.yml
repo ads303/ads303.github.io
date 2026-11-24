@@ -85,11 +85,11 @@ author:
   name             : "Aditya Sriram"
   avatar           : "AdityaProfile2751x2751.jpg"
   bio              : "Machine learning to achieve human understanding."
-  location         : "Pittsburgh, PA"
+  location         : "San Francisco, CA"
   employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=i24X9hkAAAAJ&hl=en"
-  email            : "ads303 at pitt.edu"
+  email            : "aditya.sriram@ucsf.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -104,7 +104,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/adityadsriram/"
+  linkedin         : "adityadsriram"
   orcid            : "https://orcid.org/0000-0001-7303-9529"
   pinterest        :
   soundcloud       :
@@ -147,6 +147,8 @@ exclude:
   - node_modules
   - package.json
   - tmp
+  - docs
+  - scripts
   - vendor
 keep_files:
   - .git
@@ -287,6 +289,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jemoji
 
 

@@ -1,0 +1,144 @@
+{% comment %}
+  One monthly coordinate system for academic stages and publication counts.
+  Only dated published/preprint records are counted, once per canonical record.
+  Keep degree boundaries at year resolution; they are schematic, not exact dates.
+{% endcomment %}
+{% assign journey_start = 2016 %}
+{% assign journey_year = site.time | date: '%Y' | plus: 0 | at_least: 2026 %}
+{% assign journey_last_month = site.time | date: '%m' | plus: 0 %}
+{% assign journey_years = journey_year | minus: journey_start | plus: 1 %}
+{% assign journey_months = journey_years | times: 12 %}
+{% assign journey_now = journey_year | minus: journey_start | times: 12 | plus: journey_last_month %}
+{% assign journey_month_names = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}
+{% assign journey_max_count = 1 %}
+{% assign journey_dated_count = 0 %}
+{% for year in (journey_start..journey_year) %}
+  {% for month in (1..12) %}
+    {% assign month_key = month | prepend: '0' | slice: -2, 2 | prepend: '-' | prepend: year %}
+    {% assign month_count = 0 %}
+    {% for publication in site.data.publications %}
+      {% assign publication_month = publication.date | slice: 0, 7 %}
+      {% if publication.date and publication_month == month_key %}
+        {% if publication.status == 'published' or publication.status == 'preprint' %}
+          {% assign month_count = month_count | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign journey_dated_count = journey_dated_count | plus: month_count %}
+    {% if month_count > journey_max_count %}{% assign journey_max_count = month_count %}{% endif %}
+  {% endfor %}
+{% endfor %}
+<link rel="stylesheet" href="{{ '/assets/css/academic-timeline.css' | relative_url }}">
+<section class="academic-journey" aria-labelledby="academic-journey-title">
+  <div class="academic-journey__heading">
+    <div>
+      <p class="academic-journey__eyebrow">Education &amp; research</p>
+      <h2 id="academic-journey-title">Academic journey</h2>
+    </div>
+    <span class="academic-journey__range">2016 — present</span>
+  </div>
+  <p class="academic-journey__intro">A path through genetics, epidemiology, and computational discovery.</p>
+  <p class="journey-scroll-hint">Scroll across the tracks to explore the full timeline.</p>
+  <div class="journey-browser">
+    <div class="journey-browser__toolbar">
+      <span>Academic assembly</span>
+      <span>Monthly publication bins</span>
+    </div>
+    <div class="journey-browser__scroll" tabindex="0" role="region" aria-label="Academic journey and monthly publication plot. Scroll horizontally on small screens." aria-describedby="journey-chart-notes">
+      <div class="journey-browser__plot" style="--journey-months: {{ journey_months }}; --journey-years: {{ journey_years }};">
+        <div class="journey-browser__axis">
+          <span class="journey-browser__axis-label">Year</span>
+          <div class="journey-browser__years" aria-hidden="true">
+            {% for year in (journey_start..journey_year) %}<span>{{ year }}</span>{% endfor %}
+          </div>
+        </div>
+        <ol class="journey-browser__stages" aria-label="Academic appointments and degrees">
+          {% for stage in site.data.journey %}
+            {% assign stage_start = stage.start_year | minus: journey_start | times: 12 | plus: 1 %}
+            {% if stage.end_year %}
+              {% assign stage_span = stage.end_year | minus: stage.start_year | times: 12 %}
+            {% else %}
+              {% assign stage_span = journey_now | minus: stage_start | plus: 1 %}
+            {% endif %}
+            <li class="journey-stage" style="--stage-color: {{ stage.color }}; --stage-accent: {{ stage.accent }};">
+              <div class="journey-stage__label">
+                <span class="journey-stage__name" title="{{ stage.full_name }}">{{ stage.institution }}</span>
+                <span class="journey-stage__dates">{{ stage.start_year }}–{% if stage.end_year %}{{ stage.end_year }}{% else %}present{% endif %}</span>
+              </div>
+              <div class="journey-stage__track">
+                <div class="journey-stage__segment" style="grid-column: {{ stage_start }} / span {{ stage_span }};" title="{{ stage.full_name }}: {{ stage.qualification }} · {{ stage.subject }}">
+                  <span class="journey-stage__degree">{{ stage.qualification }}</span>
+                  <span class="journey-stage__sequence" aria-hidden="true"></span>
+                  <span class="journey-sr-only">{{ stage.full_name }}. {{ stage.subject }}.</span>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ol>
+        <div class="journey-density">
+          <div class="journey-density__label">
+            <span>Publications</span>
+            <span class="journey-density__unit">per month</span>
+            <span class="journey-density__max">{{ journey_max_count }}</span>
+            <span class="journey-density__zero">0</span>
+          </div>
+          <div class="journey-density__track" aria-label="Monthly publication counts. Select a nonzero month to view its publications.">
+            {% for year in (journey_start..journey_year) %}
+              {% for month in (1..12) %}
+                {% assign month_index = month | minus: 1 %}
+                {% assign month_name = journey_month_names[month_index] %}
+                {% assign month_key = month | prepend: '0' | slice: -2, 2 | prepend: '-' | prepend: year %}
+                {% assign published_count = 0 %}
+                {% assign preprint_count = 0 %}
+                {% for publication in site.data.publications %}
+                  {% assign publication_month = publication.date | slice: 0, 7 %}
+                  {% if publication.date and publication_month == month_key %}
+                    {% if publication.status == 'published' %}{% assign published_count = published_count | plus: 1 %}{% endif %}
+                    {% if publication.status == 'preprint' %}{% assign preprint_count = preprint_count | plus: 1 %}{% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% assign month_total = published_count | plus: preprint_count %}
+                {% assign published_height = published_count | times: 100.0 | divided_by: journey_max_count %}
+                {% assign preprint_height = preprint_count | times: 100.0 | divided_by: journey_max_count %}
+                {% if month_total > 0 %}
+                  <a class="journey-density__month" href="#journey-month-{{ month_key }}" data-journey-month="journey-month-{{ month_key }}" aria-label="{{ month_name }} {{ year }}: {{ published_count }} published, {{ preprint_count }} preprint{% if preprint_count != 1 %}s{% endif %}. View details." title="{{ month_name }} {{ year }} · {{ published_count }} published · {{ preprint_count }} preprints">
+                    <span class="journey-density__bar journey-density__bar--published" style="height: {{ published_height }}%;" aria-hidden="true"></span>
+                    <span class="journey-density__bar journey-density__bar--preprint" style="height: {{ preprint_height }}%;" aria-hidden="true"></span>
+                  </a>
+                {% else %}
+                  <span class="journey-density__month journey-density__month--empty" aria-hidden="true"></span>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="journey-browser__legend" aria-label="Publication track legend">
+      <span><i class="journey-key journey-key--published" aria-hidden="true"></i>Published</span>
+      <span><i class="journey-key journey-key--preprint" aria-hidden="true"></i>Preprints</span>
+      <span class="journey-browser__count">{{ journey_dated_count }} dated works</span>
+    </div>
+  </div>
+  <p id="journey-chart-notes" class="academic-journey__notes">Academic stages use year-level boundaries. Publication bars show the online release month of each current version; superseded preprints, abstracts, and works without a confirmed month are excluded.</p>
+  <details class="journey-publication-details" id="journey-publication-details">
+    <summary>Explore publication months</summary>
+    <div class="journey-publication-details__list">
+      {% for year in (journey_start..journey_year) %}
+        {% for month in (1..12) %}
+          {% assign month_key = month | prepend: '0' | slice: -2, 2 | prepend: '-' | prepend: year %}
+          {% assign month_index = month | minus: 1 %}
+          {% capture month_works %}{% for publication in site.data.publications %}{% assign publication_month = publication.date | slice: 0, 7 %}{% if publication.date and publication_month == month_key %}{% if publication.status == 'published' or publication.status == 'preprint' %}<li><a href="{{ publication.url }}">{{ publication.title }}</a> <span>({% if publication.status == 'preprint' %}preprint{% else %}published{% endif %})</span></li>{% endif %}{% endif %}{% endfor %}{% endcapture %}
+          {% assign month_works = month_works | strip %}
+          {% unless month_works == '' %}
+            <section id="journey-month-{{ month_key }}" class="journey-publication-month" tabindex="-1">
+              <h3>{{ journey_month_names[month_index] }} {{ year }}</h3>
+              <ul>{{ month_works }}</ul>
+            </section>
+          {% endunless %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </details>
+</section>
+<script src="{{ '/assets/js/academic-timeline.js' | relative_url }}" defer></script>
