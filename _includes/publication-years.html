@@ -1,0 +1,11 @@
+{% assign years = include.publications | group_by: 'year' | sort: 'name' | reverse %}
+{% for year in years %}
+<div class="publication-year">
+  <h3>{{ year.name }}</h3>
+  <div class="publication-year__entries">
+    {% for publication in year.items %}
+    {% include publication-entry.html publication=publication %}
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}

@@ -1,0 +1,42 @@
+# Institutional ranges are year-level milestones supplied by Aditya.
+# Their boundaries are schematic; they do not assert an enrollment/start month.
+- id: davis
+  institution: UC Davis
+  full_name: University of California, Davis
+  start_year: 2016
+  end_year: 2020
+  qualification: B.S.
+  subject: Genetics & Genomics · Statistics minor
+  color: '#022851'
+  accent: '#ffbf00'
+  color_source: https://communicationsguide.ucdavis.edu/brand-guide/colors
+- id: washington
+  institution: UW
+  full_name: University of Washington
+  start_year: 2020
+  end_year: 2022
+  qualification: M.S.
+  subject: Genetic Epidemiology
+  color: '#32006e'
+  accent: '#b7a57a'
+  color_source: https://www.washington.edu/brand/brand-elements/colors/
+- id: pittsburgh
+  institution: Pittsburgh
+  full_name: University of Pittsburgh
+  start_year: 2022
+  end_year: 2026
+  qualification: Ph.D.
+  subject: Human Genetics
+  color: '#003594'
+  accent: '#ffb81c'
+  color_source: https://www.brand.pitt.edu/brand-elements/color-palettes
+- id: ucsf
+  institution: UCSF
+  full_name: University of California, San Francisco
+  start_year: 2026
+  end_year:
+  qualification: Postdoc
+  subject: Neurology · Abbasi-Asl Lab
+  color: '#052049'
+  accent: '#16a0ac'
+  color_source: https://identity.ucsf.edu/brand-guide/color
