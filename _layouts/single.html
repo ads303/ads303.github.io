@@ -25,7 +25,10 @@ layout: default
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
-        <header>
+        <header{% if page.homepage_skyline and page.url == '/' %} class="page__header--skyline"{% endif %}>
+          {% if page.homepage_skyline and page.url == '/' %}
+          <img class="page__skyline" src="{{ '/images/san-francisco-skyline.png' | relative_url }}" width="1851" height="849" alt="" aria-hidden="true">
+          {% endif %}
           {% if page.eyebrow %}
           <p class="page__eyebrow">
             {% if page.eyebrow_icon == 'location' %}
