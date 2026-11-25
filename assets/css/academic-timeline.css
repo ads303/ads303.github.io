@@ -17,7 +17,7 @@
 .journey-browser__toolbar > span:first-child { font-weight: 600; color: var(--journey-ink); }
 .journey-browser__scroll { overflow-x: auto; overscroll-behavior-inline: contain; padding: 1.25rem 1rem 1rem; }
 .journey-browser__scroll:focus-visible { outline: 2px solid #2b6777; outline-offset: -3px; }
-.journey-browser__plot { min-width: 760px; }
+.journey-browser__plot { min-width: 760px; position: relative; }
 .journey-browser__axis { display: grid; grid-template-columns: var(--journey-gutter) 1fr; align-items: center; margin-bottom: .45rem; }
 .journey-browser__axis-label { color: var(--journey-muted); font-size: .875rem; }
 .journey-browser__years { display: grid; grid-template-columns: repeat(var(--journey-years), minmax(0, 1fr)); border-bottom: 1px solid #b9cbd0; padding-bottom: .55rem; color: var(--journey-muted); font-size: .875rem; font-variant-numeric: tabular-nums; }
@@ -52,9 +52,14 @@
 .journey-mentors__label { padding: 1.45rem 1rem 0 0; font-size: .875rem; line-height: 1.5; font-weight: 600; }
 .journey-mentors__track { padding: 1rem 0 .5rem; align-items: start; }
 .journey-mentors__group { grid-row: 1; min-width: 0; padding-inline: 2px; display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start; gap: 4px; }
-.journey-mentor { display: block; flex: 0 1 36px; width: 36px; max-width: 100%; aspect-ratio: 1; padding: 0; margin: 0; border: 1px solid var(--stage-color); border-radius: 6px; background: #f2f5f6; color: var(--stage-color); cursor: pointer; overflow: hidden; }
+.journey-mentor { display: block; flex: 0 1 36px; width: 36px; max-width: 100%; aspect-ratio: 1; padding: 0; margin: 0; border: 1px solid var(--stage-color); border-radius: 6px; background: #f2f5f6; color: var(--stage-color); overflow: hidden; position: relative; z-index: 2; }
 .academic-journey .journey-mentor img { display: block; width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 5px; margin: 0; }
 .journey-mentor:hover, .journey-mentor:focus-visible { outline: 2px solid var(--stage-color); outline-offset: 2px; }
+.journey-mentors__visit { grid-row: 2; justify-self: center; margin-top: 1.25rem; text-align: center; }
+.journey-mentors__visit-portraits { width: 76px; margin-inline: auto; display: flex; gap: 4px; }
+.journey-mentors__visit-label { display: block; margin-top: .35rem; color: var(--journey-muted); font-size: .6875rem; white-space: nowrap; }
+.journey-mentor-links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: visible; }
+.journey-mentor-links path { fill: none; stroke: #718d96; stroke-width: 1; stroke-dasharray: 3 4; vector-effect: non-scaling-stroke; }
 .journey-mentors__caption { min-height: 1.75rem; color: var(--journey-muted); font-size: .8125rem; line-height: 1.5; padding: 0 1rem .4rem; }
 .journey-browser__legend { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.3rem; padding: .85rem 1rem; border-top: 1px solid var(--journey-border); font-size: .875rem; color: var(--journey-muted); }
 .journey-browser__legend > span { display: inline-flex; align-items: center; gap: .45rem; }

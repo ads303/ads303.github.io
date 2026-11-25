@@ -82,7 +82,7 @@
                 {% capture work_date_label %}{{ work_year }} (year only){% endcapture %}
               {% endif %}
               {% if work_year >= journey_start and work_year <= journey_year %}
-                <a class="journey-feature journey-feature--{{ work_kind }}{% unless work_date %} journey-feature--year-only{% endunless %}" style="grid-column: {{ work_column }} / span {{ work_span }};" href="#journey-work-{{ publication.id }}" data-journey-work="journey-work-{{ publication.id }}" title="{{ publication.title | escape }} · {{ work_date_label | strip | escape }} · {{ publication.status | replace: '-', ' ' }}" aria-label="{{ publication.title | escape }}. {{ work_date_label | strip | escape }}. {{ publication.status | replace: '-', ' ' }}. View details."><span class="journey-sr-only">{{ publication.short_title | default: publication.title | escape }}</span></a>
+                <a id="journey-feature-{{ publication.id }}" class="journey-feature journey-feature--{{ work_kind }}{% unless work_date %} journey-feature--year-only{% endunless %}" style="grid-column: {{ work_column }} / span {{ work_span }};" href="#journey-work-{{ publication.id }}" data-journey-work="journey-work-{{ publication.id }}" title="{{ publication.title | escape }} · {{ work_date_label | strip | escape }} · {{ publication.status | replace: '-', ' ' }}" aria-label="{{ publication.title | escape }}. {{ work_date_label | strip | escape }}. {{ publication.status | replace: '-', ' ' }}. View details."><span class="journey-sr-only">{{ publication.short_title | default: publication.title | escape }}</span></a>
               {% endif %}
             {% endfor %}
           </div>
@@ -100,14 +100,27 @@
               {% endif %}
               <div class="journey-mentors__group" role="group" aria-label="{{ stage.institution | escape }} mentors" style="grid-column: {{ stage_start }} / span {{ stage_span }}; --stage-color: {{ stage.color }};">
                 {% for mentor in mentors %}
-                  <button type="button" class="journey-mentor" aria-label="{{ mentor.name | escape }} · {{ stage.institution | escape }}" aria-controls="journey-mentor-caption" data-journey-mentor="{{ mentor.name | escape }}" data-mentor-institution="{{ stage.institution | escape }}">
-                    <img src="{{ mentor.image | relative_url }}" alt="" width="36" height="36" loading="lazy" decoding="async" style="object-position: {{ mentor.position | default: '50% 50%' }};">
-                  </button>
+                  {% include journey-mentor.html mentor=mentor institution=stage.institution %}
                 {% endfor %}
+              </div>
+            {% endfor %}
+            {% for visit in site.data.mentor_visits %}
+              {% assign visit_start = visit.year | minus: journey_start | times: 12 | plus: 1 %}
+              {% assign visit_mentors = site.data.mentors | where: 'institution', visit.id %}
+              <div class="journey-mentors__visit" role="group" aria-label="{{ visit.description | escape }} mentors" style="grid-column: {{ visit_start }} / span 12; --stage-color: {{ visit.color }};">
+                <div class="journey-mentors__visit-portraits">
+                  {% for mentor in visit_mentors %}{% include journey-mentor.html mentor=mentor institution=visit.description %}{% endfor %}
+                </div>
+                <span class="journey-mentors__visit-label">{{ visit.label | escape }}</span>
               </div>
             {% endfor %}
           </div>
         </div>
+        <svg class="journey-mentor-links" aria-hidden="true" focusable="false">
+          {% for mentor in site.data.mentors %}
+            {% for work in mentor.works %}<path data-work-target="journey-feature-{{ work }}" data-mentor-target="journey-mentor-{{ mentor.id }}"></path>{% endfor %}
+          {% endfor %}
+        </svg>
       </div>
     </div>
     <div class="journey-mentors__caption" id="journey-mentor-caption"></div>
@@ -128,6 +141,8 @@
         <article id="journey-work-{{ publication.id }}" class="journey-publication-work" tabindex="-1">
           <h3><a href="{{ publication.url }}">{{ publication.title | escape }}</a></h3>
           <p>{% if work_date %}{{ work_date | date: '%B %Y' }}{% if publication.status == 'in-press' and publication.date == nil %} · Public preprint{% endif %}{% elsif publication.year %}{{ publication.year }} · Year only{% else %}Date not confirmed{% endif %} · {{ publication.venue | escape }} · {% if publication.type %}{{ publication.type | escape }}{% elsif publication.status == 'abstract' %}Conference abstract{% else %}{{ publication.status | replace: '-', ' ' | capitalize }}{% endif %}</p>
+          {% capture work_mentors %}{% assign mentor_separator = '' %}{% for mentor in site.data.mentors %}{% if mentor.works contains publication.id %}{{ mentor_separator }}{{ mentor.name | escape }}{% assign mentor_separator = ', ' %}{% endif %}{% endfor %}{% endcapture %}
+          {% unless work_mentors == empty %}<p>Mentors: {{ work_mentors }}</p>{% endunless %}
           <a class="journey-publication-work__citation" href="{{ '/publishedwork/' | relative_url }}#{{ publication.id }}">Full citation</a>
         </article>
       {% endfor %}

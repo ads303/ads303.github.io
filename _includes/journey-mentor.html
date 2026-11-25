@@ -1,0 +1,3 @@
+<span class="journey-mentor" id="journey-mentor-{{ include.mentor.id }}" tabindex="0" role="img" aria-label="{{ include.mentor.name | escape }} · {{ include.institution | escape }}" data-journey-mentor="{{ include.mentor.name | escape }}" data-mentor-institution="{{ include.institution | escape }}">
+  <img src="{{ include.mentor.image | relative_url }}" alt="" width="36" height="36" loading="lazy" decoding="async" style="object-position: {{ include.mentor.position | default: '50% 50%' }};">
+</span>
