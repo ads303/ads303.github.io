@@ -13,6 +13,7 @@ redirect_from:
 {% assign preprints = publications | where: 'status', 'preprint' %}
 {% assign in_press = publications | where: 'status', 'in-press' %}
 {% assign abstracts = publications | where: 'status', 'abstract' %}
+{% assign contributions = publications | where: 'status', 'contribution' %}
 
 <div class="publications-page">
 <p class="publications-intro">Research in statistical genetics, causal inference, and interpretable machine learning.</p>
@@ -22,6 +23,7 @@ redirect_from:
   <a href="#in-press">In press</a>
   <a href="#published-papers">Published papers</a>
   <a href="#conference-abstracts">Conference abstracts</a>
+  <a href="#contributions">Other contributions</a>
 </nav>
 
 <section id="library" class="publication-library" aria-labelledby="library-title">
@@ -35,6 +37,8 @@ redirect_from:
   {% include publication-covers.html publications=in_press %}
   <h3>Conference abstracts</h3>
   {% include publication-covers.html publications=abstracts %}
+  <h3>Other contributions</h3>
+  {% include publication-covers.html publications=contributions %}
 </section>
 
 <section id="preprints" class="publication-section" aria-labelledby="preprints-title">
@@ -56,6 +60,11 @@ redirect_from:
 <section id="conference-abstracts" class="publication-section" aria-labelledby="conference-abstracts-title">
   <h2 id="conference-abstracts-title">Conference abstracts</h2>
   {% include publication-years.html publications=abstracts %}
+</section>
+<section id="contributions" class="publication-section" aria-labelledby="contributions-title">
+  <h2 id="contributions-title">Other contributions</h2>
+  <p class="publication-section-note">Research datasets and dissertations.</p>
+  {% include publication-years.html publications=contributions %}
 </section>
 <p class="publication-footer">For citation metrics, visit <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 </div>

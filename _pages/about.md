@@ -2,7 +2,7 @@
 permalink: /
 title: "About Me"
 excerpt: "About me"
-eyebrow: "Computational genomics · UCSF"
+eyebrow: "Now: Department of Neurology @UCSF"
 author_profile: true
 redirect_from: 
   - /about
