@@ -8,7 +8,6 @@
   color: var(--journey-ink);
 }
 .academic-journey .academic-journey__heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; }
-.academic-journey .academic-journey__eyebrow { margin: 0 0 .45rem; font-size: .8125rem; letter-spacing: .02em; font-weight: 650; color: #2b6777; }
 .academic-journey .academic-journey__heading h2 { margin: 0; padding: 0; border: 0; font-size: 1.65rem; letter-spacing: -.025em; line-height: 1.2; }
 .academic-journey__range { white-space: nowrap; color: var(--journey-muted); font-size: .875rem; }
 .academic-journey .academic-journey__intro { margin: .85rem 0 1.5rem; color: var(--journey-muted); font-size: 1rem; }
