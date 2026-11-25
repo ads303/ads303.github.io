@@ -20,13 +20,10 @@
 <link rel="stylesheet" href="{{ '/assets/css/academic-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 <section class="academic-journey" aria-labelledby="academic-journey-title">
   <div class="academic-journey__heading">
-    <div>
-      <p class="academic-journey__eyebrow">Education &amp; Research</p>
-      <h2 id="academic-journey-title">Academic journey</h2>
-    </div>
+    <h2 id="academic-journey-title">My Academic Journey</h2>
     <span class="academic-journey__range">{{ journey_start }} — present</span>
   </div>
-  <p class="academic-journey__intro">My academic genome browser.</p>
+  <p class="academic-journey__intro">(as a genome browser)</p>
   <p class="journey-scroll-hint">Scroll across the tracks to explore the full timeline.</p>
   <div class="journey-browser">
     <div class="journey-browser__toolbar"><span>assembly_<time id="journey-assembly-date" datetime="{{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: '%m-%d-%Y' }}</time></span></div>
