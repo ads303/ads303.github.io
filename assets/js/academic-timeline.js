@@ -26,6 +26,34 @@
     });
   }
 
+  var mentorCaption = document.getElementById('journey-mentor-caption');
+  if (mentorCaption) {
+    var mentorButtons = document.querySelectorAll('[data-journey-mentor]');
+    var selectedMentor = null;
+    function showMentor(button) {
+      mentorCaption.textContent = button.getAttribute('data-journey-mentor') + ' · ' + button.getAttribute('data-mentor-institution');
+    }
+    function restoreMentor() {
+      if (document.activeElement && document.activeElement.hasAttribute('data-journey-mentor')) {
+        showMentor(document.activeElement);
+      } else if (selectedMentor) {
+        showMentor(selectedMentor);
+      } else {
+        mentorCaption.textContent = '';
+      }
+    }
+    mentorButtons.forEach(function (button) {
+      button.addEventListener('pointerenter', function () { showMentor(button); });
+      button.addEventListener('pointerleave', restoreMentor);
+      button.addEventListener('focus', function () { showMentor(button); });
+      button.addEventListener('blur', restoreMentor);
+      button.addEventListener('click', function () {
+        selectedMentor = button;
+        showMentor(button);
+      });
+    });
+  }
+
   var details = document.getElementById('journey-publication-details');
   if (!details) return;
 

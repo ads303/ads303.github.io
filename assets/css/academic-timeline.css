@@ -28,7 +28,7 @@
 .journey-stage__label { display: flex; flex-direction: column; justify-content: center; gap: .15rem; padding-right: .7rem; }
 .journey-stage__name { font-size: .875rem; font-weight: 650; color: var(--stage-color); }
 .journey-stage__dates { font-size: .875rem; color: var(--journey-muted); font-variant-numeric: tabular-nums; }
-.journey-stage__track, .journey-features__track { display: grid; grid-template-columns: repeat(var(--journey-months), minmax(0, 1fr)); position: relative; background-image: linear-gradient(to right, #dbe5e9 1px, transparent 1px), linear-gradient(to right, #f0f3f4 1px, transparent 1px); background-size: calc(100% / var(--journey-years)) 100%, calc(100% / var(--journey-months)) 100%; }
+.journey-stage__track, .journey-features__track, .journey-mentors__track { display: grid; grid-template-columns: repeat(var(--journey-months), minmax(0, 1fr)); position: relative; background-image: linear-gradient(to right, #dbe5e9 1px, transparent 1px), linear-gradient(to right, #f0f3f4 1px, transparent 1px); background-size: calc(100% / var(--journey-years)) 100%, calc(100% / var(--journey-months)) 100%; }
 .journey-stage__track { align-items: center; }
 .journey-stage__segment { min-width: 0; margin-right: 2px; }
 .journey-stage__degree { display: block; margin: 0 0 .3rem; font-size: .875rem; font-weight: 600; color: var(--stage-color); }
@@ -47,6 +47,15 @@
 .journey-feature--year-only::before { background: #fff; border: 2px dashed var(--feature-color); }
 .journey-feature:hover::before { box-shadow: 0 0 0 2px #253b43; }
 .journey-feature:focus-visible { outline: 2px solid #253b43; outline-offset: 2px; z-index: 2; }
+/* Mentors are grouped within university intervals, without assigning individual dates. */
+.journey-mentors { display: grid; grid-template-columns: var(--journey-gutter) 1fr; border-top: 1px solid var(--journey-border); }
+.journey-mentors__label { padding: 1.45rem 1rem 0 0; font-size: .875rem; line-height: 1.5; font-weight: 600; }
+.journey-mentors__track { padding: 1rem 0 .5rem; align-items: start; }
+.journey-mentors__group { grid-row: 1; min-width: 0; padding-inline: 2px; display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start; gap: 4px; }
+.journey-mentor { display: block; flex: 0 1 36px; width: 36px; max-width: 100%; aspect-ratio: 1; padding: 0; margin: 0; border: 1px solid var(--stage-color); border-radius: 6px; background: #f2f5f6; color: var(--stage-color); cursor: pointer; overflow: hidden; }
+.academic-journey .journey-mentor img { display: block; width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 5px; margin: 0; }
+.journey-mentor:hover, .journey-mentor:focus-visible { outline: 2px solid var(--stage-color); outline-offset: 2px; }
+.journey-mentors__caption { min-height: 1.75rem; color: var(--journey-muted); font-size: .8125rem; line-height: 1.5; padding: 0 1rem .4rem; }
 .journey-browser__legend { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.3rem; padding: .85rem 1rem; border-top: 1px solid var(--journey-border); font-size: .875rem; color: var(--journey-muted); }
 .journey-browser__legend > span { display: inline-flex; align-items: center; gap: .45rem; }
 .journey-key { display: inline-block; width: 1.4rem; height: .55rem; background-color: var(--feature-color); }

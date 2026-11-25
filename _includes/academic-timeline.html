@@ -27,7 +27,7 @@
   <p class="journey-scroll-hint">Scroll across the tracks to explore the full timeline.</p>
   <div class="journey-browser">
     <div class="journey-browser__toolbar"><span>assembly_<time id="journey-assembly-date" datetime="{{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: '%m-%d-%Y' }}</time></span></div>
-    <div class="journey-browser__scroll" tabindex="0" role="region" aria-label="Academic journey with publication and contribution features. Scroll horizontally on small screens.">
+    <div class="journey-browser__scroll" tabindex="0" role="region" aria-label="Academic journey with publications, contributions, and mentors. Scroll horizontally on small screens.">
       <div class="journey-browser__plot" style="--journey-months: {{ journey_months }}; --journey-years: {{ journey_years }};">
         <div class="journey-browser__axis">
           <span class="journey-browser__axis-label">Year</span>
@@ -87,8 +87,30 @@
             {% endfor %}
           </div>
         </div>
+        <div class="journey-mentors" aria-labelledby="journey-mentors-label">
+          <div class="journey-mentors__label" id="journey-mentors-label">Mentors</div>
+          <div class="journey-mentors__track">
+            {% for stage in site.data.journey %}
+              {% assign mentors = site.data.mentors | where: 'institution', stage.id %}
+              {% assign stage_start = stage.start_year | minus: journey_start | times: 12 | plus: 1 %}
+              {% if stage.end_year %}
+                {% assign stage_span = stage.end_year | minus: stage.start_year | times: 12 %}
+              {% else %}
+                {% assign stage_span = journey_now | minus: stage_start | plus: 1 %}
+              {% endif %}
+              <div class="journey-mentors__group" role="group" aria-label="{{ stage.institution | escape }} mentors" style="grid-column: {{ stage_start }} / span {{ stage_span }}; --stage-color: {{ stage.color }};">
+                {% for mentor in mentors %}
+                  <button type="button" class="journey-mentor" aria-label="{{ mentor.name | escape }} · {{ stage.institution | escape }}" aria-controls="journey-mentor-caption" data-journey-mentor="{{ mentor.name | escape }}" data-mentor-institution="{{ stage.institution | escape }}">
+                    <img src="{{ mentor.image | relative_url }}" alt="" width="36" height="36" loading="lazy" decoding="async" style="object-position: {{ mentor.position | default: '50% 50%' }};">
+                  </button>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
+    <div class="journey-mentors__caption" id="journey-mentor-caption"></div>
     <div class="journey-browser__legend" aria-label="Publication and contribution legend">
       <span><i class="journey-key journey-key--published" aria-hidden="true"></i>Published</span>
       <span><i class="journey-key journey-key--preprint" aria-hidden="true"></i>Preprints</span>
