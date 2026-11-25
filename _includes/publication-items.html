@@ -1,0 +1,16 @@
+<ul class="publication-items">
+{% for p in include.publications %}
+  {% assign source = site.data.publication_sources[p.library_source] %}
+  <li>
+    <a class="publication-item" href="#{{ p.id }}">
+      <span class="publication-item__logo">
+        {% if source.logo %}<img src="{{ source.logo | relative_url }}" alt="{{ source.name | escape }}" loading="lazy" width="96" height="36">{% else %}{{ p.venue | escape }}{% endif %}
+      </span>
+      <span class="publication-item__text">
+        <strong>{{ p.title | escape }}</strong>
+        <span>{{ p.venue | escape }} · {{ p.year }}{% if p.status == 'in-press' %} · {{ source.name | escape }} preprint{% elsif p.type %} · {{ p.type | escape }}{% endif %}</span>
+      </span>
+    </a>
+  </li>
+{% endfor %}
+</ul>

@@ -6,7 +6,7 @@ redirect_from:
   - /publications
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 {% assign publications = site.data.publications %}
 {% assign published = publications | where: 'status', 'published' %}
@@ -28,17 +28,17 @@ redirect_from:
 
 <section id="library" class="publication-library" aria-labelledby="library-title">
   <h2 id="library-title">Library</h2>
-  <p class="publication-section-note">Select a cover to view its citation and links.</p>
+  <p class="publication-section-note">Select a work to view its citation and links.</p>
   <h3>Published papers</h3>
   {% include publication-covers.html publications=published %}
   <h3>Preprints</h3>
-  {% include publication-covers.html publications=preprints %}
+  {% include publication-items.html publications=preprints %}
   <h3>In press</h3>
-  {% include publication-covers.html publications=in_press %}
+  {% include publication-items.html publications=in_press %}
   <h3>Conference abstracts</h3>
   {% include publication-covers.html publications=abstracts %}
   <h3>Other contributions</h3>
-  {% include publication-covers.html publications=contributions %}
+  {% include publication-items.html publications=contributions %}
 </section>
 
 <section id="preprints" class="publication-section" aria-labelledby="preprints-title">

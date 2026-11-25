@@ -1,6 +1,7 @@
 # Curated bibliography. See docs/publication-data.md before adding records.
 # date is the first online publication date of this version, not the issue year.
 - id: single-cell-reliability
+  library_source: biorxiv
   title: Prediction transfer does not imply reliability transfer in single-cell foundation models
   short_title: Reliability in single-cell foundation models
   authors: 'Sriram A, Luo T, Zhang L, Kim S, Park HJ.'
@@ -16,6 +17,7 @@
   date_source: https://www.biorxiv.org/content/10.64898/2026.10.21.760716v1
 
 - id: sepsis-carbohydrate-metabolism
+  library_source: research-square
   title: 'Global carbohydrate metabolism is increased and beta hydroxybutyrate decreased in sepsis vulnerable children compared to sepsis tolerant children; a cohort study'
   short_title: Metabolism & pediatric sepsis
   authors: 'Carcillo RA, Caldino Bohn RI, Sriram A, Kernan KF, et al.'
@@ -31,6 +33,7 @@
   date_source: https://pubmed.ncbi.nlm.nih.gov/42922814/
 
 - id: precision-medicine-dissertation
+  library_source: pittsburgh
   title: Advancing Methodological Foundations in Precision Medicine Through Novel Causal Inference, Machine Learning, and Artificial Intelligence Frameworks
   short_title: Precision medicine dissertation
   authors: 'Sriram AD.'
@@ -48,6 +51,7 @@
   date_source: null
 
 - id: eqtm-atlas
+  library_source: biorxiv
   title: 'eQTM (expression quantitative trait methylation) Atlas: a comprehensive resource of over 11 million DNA methylation-gene expression associations through across 11 tissues and 4 diseases'
   short_title: eQTM Atlas
   authors: 'Sriram A, Kim S, Caldino Bohn R, Chen W, Liu T, Yue M, Jain N, Pierce BL, Joehanes R, Levy D, Patin E, Quintana-Murci L, Park HJ, Celedón JC.'
@@ -80,6 +84,7 @@
   date_source: https://pubmed.ncbi.nlm.nih.gov/42018614/
 
 - id: genetic-anchors-asthma-dataset
+  library_source: dryad
   title: 'Data from: Estimating in-silico causal effects of DNA methylation on gene expression through genetic anchors in airway epithelium from youth with and without asthma'
   short_title: Genetic anchors in asthma dataset
   authors: 'Kim S, Caldino Bohn R, Sriram A, Park HJ, Huang Z, Chen W, Celedón JC.'
@@ -116,6 +121,7 @@
   preprint_url: https://doi.org/10.1101/2025.08.14.670190
 
 - id: deepexpoke
+  library_source: medrxiv
   title: 'DeepEXPOKE: A Deep Learning Framework with Polygenic Risk Scores as Knockoffs for Deconvoluting Genetic and Non-Genetic Exposure Risks in Sepsis and Coronary Heart Disease'
   short_title: DeepEXPOKE
   authors: 'Sriram A, Caldino Bohn R, Kernan KF, Di YP, Hsu DJ, Habibzadeh P, Carcillo JA, Kim S, Park HJ.'
@@ -152,6 +158,7 @@
   date_source: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2837768
 
 - id: microbiome-network
+  library_source: biorxiv
   title: 'Unveiling the Gut Microbiome Network Fingerprint: A Deep Learning Approach to Predict Immunotherapy Response in Melanoma Patients'
   short_title: Gut microbiome network fingerprint
   authors: 'Sun J, Fan Z, Sriram A, Park HJ.'
