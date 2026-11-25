@@ -4,6 +4,7 @@ title: "About Me"
 excerpt: "About me"
 eyebrow: "Now: Department of Neurology @UCSF"
 eyebrow_icon: location
+homepage_skyline: true
 author_profile: true
 redirect_from: 
   - /about
