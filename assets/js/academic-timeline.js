@@ -56,9 +56,6 @@
       var plotBox = plot.getBoundingClientRect();
       if (!plotBox.width || !plotBox.height) return;
       mentorLinks.setAttribute('viewBox', '0 0 ' + plotBox.width + ' ' + plotBox.height);
-      var primaryPortraits = Array.from(plot.querySelectorAll('.journey-mentors__group .journey-mentor'), function (portrait) {
-        return portrait.getBoundingClientRect();
-      }).sort(function (a, b) { return a.left - b.left; });
       linkPaths.forEach(function (path) {
         var work = document.getElementById(path.getAttribute('data-work-target'));
         var mentor = document.getElementById(path.getAttribute('data-mentor-target'));
@@ -73,29 +70,11 @@
         var y1 = workBox.bottom - 6 - plotBox.top;
         var x2 = mentorBox.left + mentorBox.width / 2 - plotBox.left;
         var y2 = mentorBox.top - plotBox.top;
-        var bend = (y1 + y2) / 2;
-        var curve = 'M ' + x1 + ' ' + y1 + ' C ' + x1 + ' ' + bend + ', ' + x2 + ' ' + bend + ', ' + x2 + ' ' + y2;
-        if (mentor.closest('.journey-mentors__visit') && primaryPortraits.length) {
-          // Route internship links through a gap, rather than through another mentor's photo.
-          var gaps = [];
-          var gapStart = 0;
-          primaryPortraits.forEach(function (box) {
-            var left = box.left - plotBox.left - 5;
-            if (left > gapStart) gaps.push([gapStart, left]);
-            gapStart = Math.max(gapStart, box.right - plotBox.left + 5);
-          });
-          gaps.push([gapStart, plotBox.width]);
-          var routeX = gaps.map(function (gap) {
-            return Math.max(gap[0], Math.min(x2, gap[1]));
-          }).sort(function (a, b) { return Math.abs(a - x2) - Math.abs(b - x2); })[0];
-          var entryY = Math.min.apply(null, primaryPortraits.map(function (box) { return box.top; })) - plotBox.top - 8;
-          var exitY = Math.max.apply(null, primaryPortraits.map(function (box) { return box.bottom; })) - plotBox.top + 8;
-          var approach = (y1 + entryY) / 2;
-          var arrival = (exitY + y2) / 2;
-          curve = 'M ' + x1 + ' ' + y1 + ' C ' + x1 + ' ' + approach + ', ' + routeX + ' ' + approach + ', ' + routeX + ' ' + entryY +
-            ' L ' + routeX + ' ' + exitY + ' C ' + routeX + ' ' + arrival + ', ' + x2 + ' ' + arrival + ', ' + x2 + ' ' + y2;
+        // A right-edge anchor keeps the straight internship link clear of Kerr's portrait.
+        if (mentor.getAttribute('data-link-anchor') === 'right') {
+          x2 = mentorBox.right - 6 - plotBox.left;
         }
-        path.setAttribute('d', curve);
+        path.setAttribute('d', 'M ' + x1 + ' ' + y1 + ' L ' + x2 + ' ' + y2);
       });
     }
 
