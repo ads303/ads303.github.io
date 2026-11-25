@@ -16,7 +16,7 @@ I received my M.S. in **Genetic Epidemiology** from the University of Washington
 
 When I'm not on research duty, my hobbies include watching any and all sports, playing the piano and drums, playing basketball and tennis, nature photography, and all things coffee. 
 
-I am incredibly passionate about teaching and mentorship, and believe it is incredibly important to share the knowledge and insights I have gained during my time as a researcher! If you have any questions about my work, or just want to chat about research, feel free to send me an email at: [aditya.sriram@ucsf.edu](mailto:aditya.sriram@ucsf.edu). 
+I am very passionate about teaching and mentorship, and believe it is incredibly important to share the knowledge and insights I have gained during my time as a researcher! If you have any questions about my work, or just want to chat about research, feel free to send me an email at: [aditya.sriram@ucsf.edu](mailto:aditya.sriram@ucsf.edu). 
 
 {% include academic-timeline.html %}
 
