@@ -9,7 +9,7 @@
     <span class="publication-cover__typeset" aria-hidden="true"><span>{{ p.venue }}</span><strong>{{ p.cover_label }}</strong><span>{{ p.cover_subtitle | default: p.type | default: p.venue }}</span></span>
   {% endif %}
   </span>
-  <span class="publication-cover__caption"><strong>{{ p.short_title | default: p.title | escape }}</strong><span>{{ p.venue | escape }} · {{ p.year }}</span></span>
+  <span class="publication-cover__caption"><strong>{% if include.full_titles %}{{ p.title | escape }}{% else %}{{ p.short_title | default: p.title | escape }}{% endif %}</strong><span>{{ p.venue | escape }} · {{ p.year }}</span></span>
 </a>
 {% endif %}
 {% endfor %}

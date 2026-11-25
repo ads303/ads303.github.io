@@ -30,7 +30,7 @@ redirect_from:
   <h2 id="library-title">Library</h2>
   <p class="publication-section-note">Select a work to view its citation and links.</p>
   <h3>Published papers</h3>
-  {% include publication-covers.html publications=published %}
+  {% include publication-covers.html publications=published full_titles=true %}
   <h3>Preprints</h3>
   {% include publication-items.html publications=preprints %}
   <h3>In press</h3>
