@@ -17,11 +17,11 @@
 {% assign journey_months = journey_years | times: 12 %}
 {% assign journey_now = site.time | date: '%Y' | plus: 0 | minus: journey_start | times: 12 | plus: journey_last_month %}
 {% assign journey_works = site.data.publications | sort: 'year' | reverse %}
-<link rel="stylesheet" href="{{ '/assets/css/academic-timeline.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/academic-timeline.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 <section class="academic-journey" aria-labelledby="academic-journey-title">
   <div class="academic-journey__heading">
     <div>
-      <p class="academic-journey__eyebrow">Education &amp; research</p>
+      <p class="academic-journey__eyebrow">Education &amp; Research</p>
       <h2 id="academic-journey-title">Academic journey</h2>
     </div>
     <span class="academic-journey__range">{{ journey_start }} — present</span>
@@ -29,8 +29,8 @@
   <p class="academic-journey__intro">My academic genome browser.</p>
   <p class="journey-scroll-hint">Scroll across the tracks to explore the full timeline.</p>
   <div class="journey-browser">
-    <div class="journey-browser__toolbar"><span>Academic assembly</span></div>
-    <div class="journey-browser__scroll" tabindex="0" role="region" aria-label="Academic journey with publication and contribution features. Scroll horizontally on small screens." aria-describedby="journey-chart-notes">
+    <div class="journey-browser__toolbar"><span>assembly_<time id="journey-assembly-date" datetime="{{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: '%m-%d-%Y' }}</time></span></div>
+    <div class="journey-browser__scroll" tabindex="0" role="region" aria-label="Academic journey with publication and contribution features. Scroll horizontally on small screens.">
       <div class="journey-browser__plot" style="--journey-months: {{ journey_months }}; --journey-years: {{ journey_years }};">
         <div class="journey-browser__axis">
           <span class="journey-browser__axis-label">Year</span>
@@ -100,7 +100,6 @@
       <span><i class="journey-key journey-key--year-only" aria-hidden="true"></i>Year only</span>
     </div>
   </div>
-  <p id="journey-chart-notes" class="academic-journey__notes">Each block is one work, not a duration. Outlined blocks have year-only dates; in-press work uses its public preprint date. Academic boundaries are shown by year.</p>
   <details class="journey-publication-details" id="journey-publication-details">
     <summary>Explore publications and contributions</summary>
     <div class="journey-publication-details__list">
@@ -116,4 +115,4 @@
     </div>
   </details>
 </section>
-<script src="{{ '/assets/js/academic-timeline.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/academic-timeline.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
