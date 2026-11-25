@@ -1,33 +1,56 @@
 # Portraits, names, and university groupings supplied by Aditya.
 # Icons belong to an academic stage; their spacing does not imply individual dates.
-- name: Dr. Megan Dennis
+- id: megan-dennis
+  name: Dr. Megan Dennis
   institution: davis
   image: /images/mentors/megan-dennis.png
   position: 35% 50%
-- name: Dr. Alexandra Colón-Rodríguez
+  works: [zebrafish-autism]
+- id: alexandra-colon-rodriguez
+  name: Dr. Alexandra Colón-Rodríguez
   institution: davis
   image: /images/mentors/alexandra-colon-rodriguez.png
-- name: Dr. Kathleen F. Kerr
+  works: [zebrafish-autism]
+- id: kathleen-kerr
+  name: Dr. Kathleen F. Kerr
   institution: washington
   image: /images/mentors/kathleen-kerr.png
   position: 50% 30%
-- name: Dr. HJ Park
+  works: [sars-cov2-risk]
+- id: hj-park
+  name: Dr. HJ Park
   institution: pittsburgh
   image: /images/mentors/hj-park.png
-- name: Dr. Soyeon Kim
+- id: soyeon-kim
+  name: Dr. Soyeon Kim
   institution: pittsburgh
   image: /images/mentors/soyeon-kim.png
-- name: Dr. Joseph A. Carcillo
+- id: joseph-carcillo
+  name: Dr. Joseph A. Carcillo
   institution: pittsburgh
   image: /images/mentors/joseph-carcillo.png
   position: 50% 30%
-- name: Dr. John R. Shaffer
+- id: john-shaffer
+  name: Dr. John R. Shaffer
   institution: pittsburgh
   image: /images/mentors/john-shaffer.png
-- name: Dr. Jenna C. Carlson
+- id: jenna-carlson
+  name: Dr. Jenna C. Carlson
   institution: pittsburgh
   image: /images/mentors/jenna-carlson.png
-- name: Dr. Reza Abbasi-Asl
+- id: reza-abbasi-asl
+  name: Dr. Reza Abbasi-Asl
   institution: ucsf
   image: /images/mentors/reza-abbasi-asl.png
   position: 50% 30%
+- id: helen-kim
+  name: Dr. Helen Kim
+  institution: ucsf-summer-2021
+  image: /images/mentors/helen-kim.png
+  works: [lesion-burden-ccm]
+- id: shantel-weinsheimer
+  name: Dr. Shantel Weinsheimer
+  institution: ucsf-summer-2021
+  image: /images/mentors/shantel-weinsheimer.png
+  position: 50% 30%
+  works: [lesion-burden-ccm]
