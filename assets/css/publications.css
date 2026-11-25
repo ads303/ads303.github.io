@@ -17,6 +17,15 @@
 .publication-cover__typeset { display: flex; flex-direction: column; justify-content: space-between; align-self: stretch; width: 100%; padding: 1.1rem; color: #2b6777; background: linear-gradient(155deg, #f3f8f9, #dfefea); }
 .publication-cover__typeset > span { font-size: .875rem; }
 .publication-cover__typeset strong { font-family: Georgia, serif; font-size: 1.8rem; font-weight: normal; line-height: 1.15; }
+.publications-page .publication-items { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--publication-rule); }
+.publications-page .publication-items > li { margin: 0; padding: 0; border-bottom: 1px solid var(--publication-rule); }
+.publication-item { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 1.4rem; align-items: start; padding: 1.2rem 0; color: var(--publication-ink) !important; text-decoration: none !important; }
+.publication-item__logo { display: flex; align-items: center; justify-content: flex-start; min-height: 36px; font-size: .75rem; color: #52656b; }
+.publication-item__logo img { display: block; width: 96px; height: 36px; object-fit: contain; object-position: left center; margin: 0; border: 0; }
+.publication-item__text { min-width: 0; }
+.publication-item__text strong { display: block; font-size: .9375rem; font-weight: 600; line-height: 1.55; overflow-wrap: anywhere; }
+.publication-item__text > span { display: block; margin-top: .35rem; color: #52656b; font-size: .8125rem; line-height: 1.5; }
+.publication-item:hover .publication-item__text strong, .publication-item:focus-visible .publication-item__text strong { color: var(--publication-accent); text-decoration: underline; text-underline-offset: 3px; }
 .publication-section { margin-top: 3.75rem; }
 .publication-year { display: grid; grid-template-columns: 4.4rem minmax(0,1fr); gap: 1.2rem; border-top: 1px solid var(--publication-rule); padding-top: 1.35rem; margin-top: 1.5rem; }
 .publications-page .publication-year > h3 { margin: .05rem 0 0; color: var(--publication-accent); font-size: 1.15rem; font-weight: 500; font-variant-numeric: tabular-nums; }
@@ -39,6 +48,9 @@
   .publication-nav { gap: .65rem 1rem; }
   .publication-cover__typeset { padding: .9rem; }
   .publication-cover__typeset strong { font-size: 1.55rem; }
+  .publication-item { grid-template-columns: minmax(0, 1fr); gap: .65rem; padding: 1rem 0; }
+  .publication-item__logo { min-height: 28px; }
+  .publication-item__logo img { width: 80px; height: 28px; }
 }
 @media (prefers-reduced-motion: reduce) { .publication-cover__image { transition: none; } }
 @media print { .publication-library, .publication-nav { display: none; } .publication-entry { break-inside: avoid; } .publication-year { display: block; } }

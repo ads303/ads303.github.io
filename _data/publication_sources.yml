@@ -1,0 +1,16 @@
+# Original source logos; provenance is recorded in docs/publication-logos.md.
+biorxiv:
+  name: bioRxiv
+  logo: /images/publication-sources/biorxiv.jpg
+medrxiv:
+  name: medRxiv
+  logo: /images/publication-sources/medrxiv.png
+research-square:
+  name: Research Square
+  logo: /images/publication-sources/research-square.svg
+dryad:
+  name: Dryad
+  logo: /images/publication-sources/dryad.png
+pittsburgh:
+  name: University of Pittsburgh
+  logo: /images/publication-sources/pittsburgh.png
