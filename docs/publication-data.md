@@ -9,7 +9,7 @@
 - `year` is the citation's bibliographic year. `date` is a quoted ISO date for the first online release of the listed version, with `date_source` pointing to the publisher, PubMed, or Crossref record. Keep `date: null` when a day/month has not been verified; never substitute January 1 for an unverified month and day.
 - For a preprint that becomes a paper, update the same record. Retain `preprint_url` as an optional secondary link rather than adding a duplicate work. An accepted manuscript can be `in-press` with a null publication date and a link explicitly labeled as the earlier preprint.
 - `authors` is plain citation text; the template highlights `Sriram A` / `Sriram AD`. Use `et al.` explicitly for shortened author lists.
-- `image` and `image_alt` preserve existing journal-cover artwork. `cover_label` and optional `cover_subtitle` provide a typeset library cover when no original image exists. `short_title` can be used for cover captions. The compact preprint, in-press, and contribution library lists and the bibliography always show the full `title`.
+- `image` and `image_alt` preserve existing journal-cover artwork. `cover_label` and optional `cover_subtitle` provide a typeset library cover when no original image exists. Published-paper cover captions, compact preprint/in-press/contribution listings, and the bibliography show the full `title`. Conference-abstract cover captions can use `short_title`.
 - `library_source` selects the small source logo from `_data/publication_sources.yml` for compact library listings. Use the actual preprint host (bioRxiv, medRxiv, or Research Square), or the relevant repository/institution for other contributions.
 - Optional links: `pdf_url`, `resource_url` + `resource_label`, and `preprint_url`.
 
