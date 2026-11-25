@@ -1,7 +1,7 @@
 {% comment %}
   Each canonical work gets one feature block. Published versions replace their
   preprints; in-press works use the public preprint date until a paper is released.
-  Year-only records retain year precision rather than inventing a release month.
+  Records without a verified month retain their original date precision.
 {% endcomment %}
 {% assign journey_start = 2016 %}
 {% assign journey_year = site.time | date: '%Y' | plus: 0 | at_least: 2026 %}
@@ -79,10 +79,10 @@
               {% else %}
                 {% assign work_column = work_year | minus: journey_start | times: 12 | plus: 1 %}
                 {% assign work_span = 12 %}
-                {% capture work_date_label %}{{ work_year }} (year only){% endcapture %}
+                {% capture work_date_label %}{{ work_year }}{% endcapture %}
               {% endif %}
               {% if work_year >= journey_start and work_year <= journey_year %}
-                <a id="journey-feature-{{ publication.id }}" class="journey-feature journey-feature--{{ work_kind }}{% unless work_date %} journey-feature--year-only{% endunless %}" style="grid-column: {{ work_column }} / span {{ work_span }};" href="#journey-work-{{ publication.id }}" data-journey-work="journey-work-{{ publication.id }}" title="{{ publication.title | escape }} · {{ work_date_label | strip | escape }} · {{ publication.status | replace: '-', ' ' }}" aria-label="{{ publication.title | escape }}. {{ work_date_label | strip | escape }}. {{ publication.status | replace: '-', ' ' }}. View details."><span class="journey-sr-only">{{ publication.short_title | default: publication.title | escape }}</span></a>
+                <a id="journey-feature-{{ publication.id }}" class="journey-feature journey-feature--{{ work_kind }}{% unless work_date %} journey-feature--outlined{% endunless %}" style="grid-column: {{ work_column }} / span {{ work_span }};" href="#journey-work-{{ publication.id }}" data-journey-work="journey-work-{{ publication.id }}" title="{{ publication.title | escape }} · {{ work_date_label | strip | escape }} · {{ publication.status | replace: '-', ' ' }}" aria-label="{{ publication.title | escape }}. {{ work_date_label | strip | escape }}. {{ publication.status | replace: '-', ' ' }}. View details."><span class="journey-sr-only">{{ publication.short_title | default: publication.title | escape }}</span></a>
               {% endif %}
             {% endfor %}
           </div>
@@ -129,7 +129,6 @@
       <span><i class="journey-key journey-key--preprint" aria-hidden="true"></i>Preprints</span>
       <span><i class="journey-key journey-key--in-press" aria-hidden="true"></i>In press</span>
       <span><i class="journey-key journey-key--contribution" aria-hidden="true"></i>Contributions</span>
-      <span><i class="journey-key journey-key--year-only" aria-hidden="true"></i>Year only</span>
     </div>
   </div>
   <details class="journey-publication-details" id="journey-publication-details">
@@ -140,7 +139,7 @@
         {% if publication.status == 'in-press' and work_date == nil %}{% assign work_date = publication.preprint_date %}{% endif %}
         <article id="journey-work-{{ publication.id }}" class="journey-publication-work" tabindex="-1">
           <h3><a href="{{ publication.url }}">{{ publication.title | escape }}</a></h3>
-          <p>{% if work_date %}{{ work_date | date: '%B %Y' }}{% if publication.status == 'in-press' and publication.date == nil %} · Public preprint{% endif %}{% elsif publication.year %}{{ publication.year }} · Year only{% else %}Date not confirmed{% endif %} · {{ publication.venue | escape }} · {% if publication.type %}{{ publication.type | escape }}{% elsif publication.status == 'abstract' %}Conference abstract{% else %}{{ publication.status | replace: '-', ' ' | capitalize }}{% endif %}</p>
+          <p>{% if work_date %}{{ work_date | date: '%B %Y' }}{% if publication.status == 'in-press' and publication.date == nil %} · Public preprint{% endif %}{% elsif publication.year %}{{ publication.year }}{% else %}Date not confirmed{% endif %} · {{ publication.venue | escape }} · {% if publication.type %}{{ publication.type | escape }}{% elsif publication.status == 'abstract' %}Conference abstract{% else %}{{ publication.status | replace: '-', ' ' | capitalize }}{% endif %}</p>
           {% capture work_mentors %}{% assign mentor_separator = '' %}{% for mentor in site.data.mentors %}{% if mentor.works contains publication.id %}{{ mentor_separator }}{{ mentor.name | escape }}{% assign mentor_separator = ', ' %}{% endif %}{% endfor %}{% endcapture %}
           {% unless work_mentors == empty %}<p>Mentors: {{ work_mentors }}</p>{% endunless %}
           <a class="journey-publication-work__citation" href="{{ '/publishedwork/' | relative_url }}#{{ publication.id }}">Full citation</a>

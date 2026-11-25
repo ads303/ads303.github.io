@@ -44,7 +44,7 @@
 .journey-feature--in-press, .journey-key--in-press { --feature-color: #b47720; }
 .journey-feature--contribution, .journey-key--contribution { --feature-color: #608b91; }
 .journey-feature--in-press::before, .journey-key--in-press { background: repeating-linear-gradient(135deg, #b47720, #b47720 3px, #eed19d 3px, #eed19d 5px); }
-.journey-feature--year-only::before { background: #fff; border: 2px dashed var(--feature-color); }
+.journey-feature--outlined::before { background: #fff; border: 2px dashed var(--feature-color); }
 .journey-feature:hover::before { box-shadow: 0 0 0 2px #253b43; }
 .journey-feature:focus-visible { outline: 2px solid #253b43; outline-offset: 2px; z-index: 2; }
 /* Mentors are grouped within university intervals, without assigning individual dates. */
@@ -64,7 +64,6 @@
 .journey-browser__legend { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.3rem; padding: .85rem 1rem; border-top: 1px solid var(--journey-border); font-size: .875rem; color: var(--journey-muted); }
 .journey-browser__legend > span { display: inline-flex; align-items: center; gap: .45rem; }
 .journey-key { display: inline-block; width: 1.4rem; height: .55rem; background-color: var(--feature-color); }
-.journey-key--year-only { background: #fff; border: 2px dashed #608b91; }
 .journey-publication-details { margin-top: .75rem; }
 .journey-publication-details summary { cursor: pointer; color: #2b6777; font-size: .875rem; padding: .5rem 0; width: fit-content; }
 .journey-publication-details summary:focus-visible { outline: 2px solid #2b6777; outline-offset: 3px; }
