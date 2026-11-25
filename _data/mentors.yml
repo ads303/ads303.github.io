@@ -47,6 +47,7 @@
   name: Dr. Helen Kim
   institution: ucsf-summer-2021
   image: /images/mentors/helen-kim.png
+  link_anchor: right
   works: [lesion-burden-ccm]
 - id: shantel-weinsheimer
   name: Dr. Shantel Weinsheimer
