@@ -33,7 +33,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .page__location-pin { flex: none; width: 1.15em; height: 1.15em; margin-top: .25em; overflow: visible; }
 .page__header--skyline { display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: 2rem; align-items: start; max-width: 640px; }
 .page__header--skyline > :not(.page__skyline) { grid-column: 1; }
-.page__header--skyline .page__skyline { grid-column: 2; grid-row: 1 / span 3; align-self: center; justify-self: start; display: block; width: 300px; max-width: 100%; height: auto; opacity: .36; pointer-events: none; }
+.page__header--skyline .page__skyline { grid-column: 2; grid-row: 1 / span 3; align-self: center; justify-self: start; display: block; width: 300px; max-width: 100%; height: auto; opacity: .36; pointer-events: none; transform: translateY(calc(2.25rem - 50%)); }
 .page__content { font-size: 1rem; }
 .page__content > p { max-width: 82ch; margin-bottom: 1.3rem; }
 .page__content h2 { color: var(--ink); font-size: 1.5rem; letter-spacing: -.025em; border-color: var(--rule); }
