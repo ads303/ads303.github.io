@@ -1,5 +1,52 @@
 # Curated bibliography. See docs/publication-data.md before adding records.
 # date is the first online publication date of this version, not the issue year.
+- id: single-cell-reliability
+  title: Prediction transfer does not imply reliability transfer in single-cell foundation models
+  short_title: Reliability in single-cell foundation models
+  authors: 'Sriram A, Luo T, Zhang L, Kim S, Park HJ.'
+  venue: bioRxiv
+  year: 2026
+  date: '2026-10-26'
+  status: preprint
+  doi: 10.64898/2026.10.21.760716
+  url: https://doi.org/10.64898/2026.10.21.760716
+  cover_label: Perturbation reliability
+  cover_subtitle: Single-cell foundation models
+  source_url: https://www.biorxiv.org/content/10.64898/2026.10.21.760716v1
+  date_source: https://www.biorxiv.org/content/10.64898/2026.10.21.760716v1
+
+- id: sepsis-carbohydrate-metabolism
+  title: 'Global carbohydrate metabolism is increased and beta hydroxybutyrate decreased in sepsis vulnerable children compared to sepsis tolerant children; a cohort study'
+  short_title: Metabolism & pediatric sepsis
+  authors: 'Carcillo RA, Caldino Bohn RI, Sriram A, Kernan KF, et al.'
+  venue: Research Square
+  year: 2026
+  date: '2026-09-01'
+  status: preprint
+  doi: 10.21203/rs.3.rs-10732509/v1
+  url: https://doi.org/10.21203/rs.3.rs-10732509/v1
+  cover_label: Sepsis metabolism
+  cover_subtitle: Carbohydrate metabolism & vulnerability
+  source_url: https://pubmed.ncbi.nlm.nih.gov/42922814/
+  date_source: https://pubmed.ncbi.nlm.nih.gov/42922814/
+
+- id: precision-medicine-dissertation
+  title: Advancing Methodological Foundations in Precision Medicine Through Novel Causal Inference, Machine Learning, and Artificial Intelligence Frameworks
+  short_title: Precision medicine dissertation
+  authors: 'Sriram AD.'
+  venue: University of Pittsburgh
+  year: 2026
+  date: null
+  status: contribution
+  type: Doctoral dissertation
+  doi: null
+  url: https://www.proquest.com/docview/3361177594
+  link_label: Dissertation details
+  cover_label: Doctoral dissertation
+  cover_subtitle: Causal inference, machine learning & AI
+  source_url: https://www.proquest.com/docview/3361177594
+  date_source: null
+
 - id: eqtm-atlas
   title: 'eQTM (expression quantitative trait methylation) Atlas: a comprehensive resource of over 11 million DNA methylation-gene expression associations through across 11 tissues and 4 diseases'
   short_title: eQTM Atlas
@@ -31,6 +78,23 @@
   image_alt: Science Advances
   source_url: https://pubmed.ncbi.nlm.nih.gov/42018614/
   date_source: https://pubmed.ncbi.nlm.nih.gov/42018614/
+
+- id: genetic-anchors-asthma-dataset
+  title: 'Data from: Estimating in-silico causal effects of DNA methylation on gene expression through genetic anchors in airway epithelium from youth with and without asthma'
+  short_title: Genetic anchors in asthma dataset
+  authors: 'Kim S, Caldino Bohn R, Sriram A, Park HJ, Huang Z, Chen W, Celedón JC.'
+  venue: Dryad
+  year: 2026
+  date: '2026-03-25'
+  status: contribution
+  type: Dataset
+  doi: 10.5061/dryad.rxwdbrvpq
+  url: https://doi.org/10.5061/dryad.rxwdbrvpq
+  link_label: View dataset
+  cover_label: Asthma dataset
+  cover_subtitle: Genetic anchors & DNA methylation
+  source_url: https://datadryad.org/dataset/doi:10.5061/dryad.rxwdbrvpq
+  date_source: https://datadryad.org/dataset/doi:10.5061/dryad.rxwdbrvpq
 
 - id: deepdiff-shap
   title: 'DeepDiff-SHAP: Interpretable deep learning for subgroup-specific causal hypothesis generation using conditional SHAP'
@@ -174,14 +238,14 @@
   venue: Stroke
   citation: '53(Suppl 1): A109'
   year: 2022
-  date: null
+  date: '2022-02-03'
   status: abstract
   doi: 10.1161/str.53.suppl_1.109
   url: https://doi.org/10.1161/str.53.suppl_1.109
   image: https://github.com/user-attachments/assets/eb70be59-8024-479b-9446-b8358f0a68bb
   image_alt: Stroke conference supplement
   source_url: https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.109
-  date_source: null
+  date_source: https://www.ahajournals.org/doi/10.1161/str.53.suppl_1.WP7
 
 - id: zebrafish-autism
   title: Assessment of Autism Zebrafish Mutant Models Using a High-Throughput Larval Phenotyping Platform
@@ -214,7 +278,7 @@
 
 - id: ostracod-biomass
   title: Ostracod Body Size as a Variable of Biomass
-  authors: 'Pathi A, Sriram A, Guo D, Heim NA, Payne J.'
+  authors: 'Pathi A, Guo D, Sriram A, Heim NA, Payne JL.'
   venue: AGU Fall Meeting Abstracts
   citation: ED41A-0713
   year: 2013

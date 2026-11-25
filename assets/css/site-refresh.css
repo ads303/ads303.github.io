@@ -29,7 +29,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 #main > .page { width: auto; float: none; padding: 0; margin: 0; min-width: 0; }
 .page__inner-wrap, .page__content { float: none !important; margin: 0 !important; width: 100% !important; }
 .page__title { font-size: clamp(2rem, 3vw, 2.65rem); letter-spacing: -.045em; line-height: 1.15; font-weight: 650; color: var(--ink); margin-bottom: 1.65rem; }
-.page__eyebrow { color: var(--teal); font-size: .8125rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; margin: 0 0 .75rem; }
+.page__eyebrow { color: var(--teal); font-size: .875rem; font-weight: 600; letter-spacing: .02em; margin: 0 0 .75rem; }
 .page__content { font-size: 1rem; }
 .page__content > p { max-width: 82ch; margin-bottom: 1.3rem; }
 .page__content h2 { color: var(--ink); font-size: 1.5rem; letter-spacing: -.025em; border-color: var(--rule); }

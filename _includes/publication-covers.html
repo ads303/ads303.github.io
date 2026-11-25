@@ -6,7 +6,7 @@
   {% if p.image %}
     <img src="{{ p.image }}" alt="{{ p.image_alt | escape }}" loading="lazy" width="300" height="340">
   {% else %}
-    <span class="publication-cover__typeset" aria-hidden="true"><span>{{ p.venue }}</span><strong>{{ p.cover_label }}</strong><span>DNA methylation<br>&amp; gene expression</span></span>
+    <span class="publication-cover__typeset" aria-hidden="true"><span>{{ p.venue }}</span><strong>{{ p.cover_label }}</strong><span>{{ p.cover_subtitle | default: p.type | default: p.venue }}</span></span>
   {% endif %}
   </span>
   <span class="publication-cover__caption"><strong>{{ p.short_title | default: p.title | escape }}</strong><span>{{ p.venue | escape }} · {{ p.year }}</span></span>

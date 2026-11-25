@@ -1,33 +1,22 @@
 {% comment %}
-  One monthly coordinate system for academic stages and publication counts.
-  Only dated published/preprint records are counted, once per canonical record.
-  Keep degree boundaries at year resolution; they are schematic, not exact dates.
+  Each canonical work gets one feature block. Published versions replace their
+  preprints; in-press works use the public preprint date until a paper is released.
+  Year-only records retain year precision rather than inventing a release month.
 {% endcomment %}
 {% assign journey_start = 2016 %}
 {% assign journey_year = site.time | date: '%Y' | plus: 0 | at_least: 2026 %}
 {% assign journey_last_month = site.time | date: '%m' | plus: 0 %}
+{% for publication in site.data.publications %}
+  {% assign work_date = publication.date %}
+  {% if publication.status == 'in-press' and work_date == nil %}{% assign work_date = publication.preprint_date %}{% endif %}
+  {% if work_date %}{% assign work_year = work_date | date: '%Y' | plus: 0 %}{% else %}{% assign work_year = publication.year | plus: 0 %}{% endif %}
+  {% if work_year > 0 and work_year < journey_start %}{% assign journey_start = work_year %}{% endif %}
+  {% if work_year > journey_year %}{% assign journey_year = work_year %}{% endif %}
+{% endfor %}
 {% assign journey_years = journey_year | minus: journey_start | plus: 1 %}
 {% assign journey_months = journey_years | times: 12 %}
-{% assign journey_now = journey_year | minus: journey_start | times: 12 | plus: journey_last_month %}
-{% assign journey_month_names = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}
-{% assign journey_max_count = 1 %}
-{% assign journey_dated_count = 0 %}
-{% for year in (journey_start..journey_year) %}
-  {% for month in (1..12) %}
-    {% assign month_key = month | prepend: '0' | slice: -2, 2 | prepend: '-' | prepend: year %}
-    {% assign month_count = 0 %}
-    {% for publication in site.data.publications %}
-      {% assign publication_month = publication.date | slice: 0, 7 %}
-      {% if publication.date and publication_month == month_key %}
-        {% if publication.status == 'published' or publication.status == 'preprint' %}
-          {% assign month_count = month_count | plus: 1 %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    {% assign journey_dated_count = journey_dated_count | plus: month_count %}
-    {% if month_count > journey_max_count %}{% assign journey_max_count = month_count %}{% endif %}
-  {% endfor %}
-{% endfor %}
+{% assign journey_now = site.time | date: '%Y' | plus: 0 | minus: journey_start | times: 12 | plus: journey_last_month %}
+{% assign journey_works = site.data.publications | sort: 'year' | reverse %}
 <link rel="stylesheet" href="{{ '/assets/css/academic-timeline.css' | relative_url }}">
 <section class="academic-journey" aria-labelledby="academic-journey-title">
   <div class="academic-journey__heading">
@@ -35,16 +24,13 @@
       <p class="academic-journey__eyebrow">Education &amp; research</p>
       <h2 id="academic-journey-title">Academic journey</h2>
     </div>
-    <span class="academic-journey__range">2016 — present</span>
+    <span class="academic-journey__range">{{ journey_start }} — present</span>
   </div>
-  <p class="academic-journey__intro">A path through genetics, epidemiology, and computational discovery.</p>
+  <p class="academic-journey__intro">My academic genome browser.</p>
   <p class="journey-scroll-hint">Scroll across the tracks to explore the full timeline.</p>
   <div class="journey-browser">
-    <div class="journey-browser__toolbar">
-      <span>Academic assembly</span>
-      <span>Monthly publication bins</span>
-    </div>
-    <div class="journey-browser__scroll" tabindex="0" role="region" aria-label="Academic journey and monthly publication plot. Scroll horizontally on small screens." aria-describedby="journey-chart-notes">
+    <div class="journey-browser__toolbar"><span>Academic assembly</span></div>
+    <div class="journey-browser__scroll" tabindex="0" role="region" aria-label="Academic journey with publication and contribution features. Scroll horizontally on small screens." aria-describedby="journey-chart-notes">
       <div class="journey-browser__plot" style="--journey-months: {{ journey_months }}; --journey-years: {{ journey_years }};">
         <div class="journey-browser__axis">
           <span class="journey-browser__axis-label">Year</span>
@@ -75,68 +61,57 @@
             </li>
           {% endfor %}
         </ol>
-        <div class="journey-density">
-          <div class="journey-density__label">
-            <span>Publications</span>
-            <span class="journey-density__unit">per month</span>
-            <span class="journey-density__max">{{ journey_max_count }}</span>
-            <span class="journey-density__zero">0</span>
-          </div>
-          <div class="journey-density__track" aria-label="Monthly publication counts. Select a nonzero month to view its publications.">
-            {% for year in (journey_start..journey_year) %}
-              {% for month in (1..12) %}
-                {% assign month_index = month | minus: 1 %}
-                {% assign month_name = journey_month_names[month_index] %}
-                {% assign month_key = month | prepend: '0' | slice: -2, 2 | prepend: '-' | prepend: year %}
-                {% assign published_count = 0 %}
-                {% assign preprint_count = 0 %}
-                {% for publication in site.data.publications %}
-                  {% assign publication_month = publication.date | slice: 0, 7 %}
-                  {% if publication.date and publication_month == month_key %}
-                    {% if publication.status == 'published' %}{% assign published_count = published_count | plus: 1 %}{% endif %}
-                    {% if publication.status == 'preprint' %}{% assign preprint_count = preprint_count | plus: 1 %}{% endif %}
-                  {% endif %}
-                {% endfor %}
-                {% assign month_total = published_count | plus: preprint_count %}
-                {% assign published_height = published_count | times: 100.0 | divided_by: journey_max_count %}
-                {% assign preprint_height = preprint_count | times: 100.0 | divided_by: journey_max_count %}
-                {% if month_total > 0 %}
-                  <a class="journey-density__month" href="#journey-month-{{ month_key }}" data-journey-month="journey-month-{{ month_key }}" aria-label="{{ month_name }} {{ year }}: {{ published_count }} published, {{ preprint_count }} preprint{% if preprint_count != 1 %}s{% endif %}. View details." title="{{ month_name }} {{ year }} · {{ published_count }} published · {{ preprint_count }} preprints">
-                    <span class="journey-density__bar journey-density__bar--published" style="height: {{ published_height }}%;" aria-hidden="true"></span>
-                    <span class="journey-density__bar journey-density__bar--preprint" style="height: {{ preprint_height }}%;" aria-hidden="true"></span>
-                  </a>
-                {% else %}
-                  <span class="journey-density__month journey-density__month--empty" aria-hidden="true"></span>
-                {% endif %}
-              {% endfor %}
+        <div class="journey-features">
+          <div class="journey-features__label">Publications and contributions</div>
+          <div class="journey-features__track" aria-label="Individual works, positioned by release date. Select a block for details.">
+            {% for publication in journey_works %}
+              {% assign work_date = publication.date %}
+              {% if publication.status == 'in-press' and work_date == nil %}{% assign work_date = publication.preprint_date %}{% endif %}
+              {% if work_date %}{% assign work_year = work_date | date: '%Y' | plus: 0 %}{% else %}{% assign work_year = publication.year | plus: 0 %}{% endif %}
+              {% assign work_kind = publication.status %}
+              {% if work_kind == 'abstract' %}{% assign work_kind = 'contribution' %}{% endif %}
+              {% if work_date %}
+                {% assign work_month = work_date | date: '%m' | plus: 0 %}
+                {% assign work_center = work_year | minus: journey_start | times: 12 | plus: work_month %}
+                {% assign work_space_before = work_center | minus: 1 %}
+                {% assign work_space_after = journey_months | minus: work_center %}
+                {% assign work_half_span = 2 | at_most: work_space_before | at_most: work_space_after %}
+                {% assign work_column = work_center | minus: work_half_span %}
+                {% assign work_span = work_half_span | times: 2 | plus: 1 %}
+                {% capture work_date_label %}{{ work_date | date: '%B %Y' }}{% if publication.status == 'in-press' and publication.date == nil %} (public preprint){% endif %}{% endcapture %}
+              {% else %}
+                {% assign work_column = work_year | minus: journey_start | times: 12 | plus: 1 %}
+                {% assign work_span = 12 %}
+                {% capture work_date_label %}{{ work_year }} (year only){% endcapture %}
+              {% endif %}
+              {% if work_year >= journey_start and work_year <= journey_year %}
+                <a class="journey-feature journey-feature--{{ work_kind }}{% unless work_date %} journey-feature--year-only{% endunless %}" style="grid-column: {{ work_column }} / span {{ work_span }};" href="#journey-work-{{ publication.id }}" data-journey-work="journey-work-{{ publication.id }}" title="{{ publication.title | escape }} · {{ work_date_label | strip | escape }} · {{ publication.status | replace: '-', ' ' }}" aria-label="{{ publication.title | escape }}. {{ work_date_label | strip | escape }}. {{ publication.status | replace: '-', ' ' }}. View details."><span class="journey-sr-only">{{ publication.short_title | default: publication.title | escape }}</span></a>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
       </div>
     </div>
-    <div class="journey-browser__legend" aria-label="Publication track legend">
+    <div class="journey-browser__legend" aria-label="Publication and contribution legend">
       <span><i class="journey-key journey-key--published" aria-hidden="true"></i>Published</span>
       <span><i class="journey-key journey-key--preprint" aria-hidden="true"></i>Preprints</span>
-      <span class="journey-browser__count">{{ journey_dated_count }} dated works</span>
+      <span><i class="journey-key journey-key--in-press" aria-hidden="true"></i>In press</span>
+      <span><i class="journey-key journey-key--contribution" aria-hidden="true"></i>Contributions</span>
+      <span><i class="journey-key journey-key--year-only" aria-hidden="true"></i>Year only</span>
     </div>
   </div>
-  <p id="journey-chart-notes" class="academic-journey__notes">Academic stages use year-level boundaries. Publication bars show the online release month of each current version; superseded preprints, abstracts, and works without a confirmed month are excluded.</p>
+  <p id="journey-chart-notes" class="academic-journey__notes">Each block is one work, not a duration. Outlined blocks have year-only dates; in-press work uses its public preprint date. Academic boundaries are shown by year.</p>
   <details class="journey-publication-details" id="journey-publication-details">
-    <summary>Explore publication months</summary>
+    <summary>Explore publications and contributions</summary>
     <div class="journey-publication-details__list">
-      {% for year in (journey_start..journey_year) %}
-        {% for month in (1..12) %}
-          {% assign month_key = month | prepend: '0' | slice: -2, 2 | prepend: '-' | prepend: year %}
-          {% assign month_index = month | minus: 1 %}
-          {% capture month_works %}{% for publication in site.data.publications %}{% assign publication_month = publication.date | slice: 0, 7 %}{% if publication.date and publication_month == month_key %}{% if publication.status == 'published' or publication.status == 'preprint' %}<li><a href="{{ publication.url }}">{{ publication.title }}</a> <span>({% if publication.status == 'preprint' %}preprint{% else %}published{% endif %})</span></li>{% endif %}{% endif %}{% endfor %}{% endcapture %}
-          {% assign month_works = month_works | strip %}
-          {% unless month_works == '' %}
-            <section id="journey-month-{{ month_key }}" class="journey-publication-month" tabindex="-1">
-              <h3>{{ journey_month_names[month_index] }} {{ year }}</h3>
-              <ul>{{ month_works }}</ul>
-            </section>
-          {% endunless %}
-        {% endfor %}
+      {% for publication in journey_works %}
+        {% assign work_date = publication.date %}
+        {% if publication.status == 'in-press' and work_date == nil %}{% assign work_date = publication.preprint_date %}{% endif %}
+        <article id="journey-work-{{ publication.id }}" class="journey-publication-work" tabindex="-1">
+          <h3><a href="{{ publication.url }}">{{ publication.title | escape }}</a></h3>
+          <p>{% if work_date %}{{ work_date | date: '%B %Y' }}{% if publication.status == 'in-press' and publication.date == nil %} · Public preprint{% endif %}{% elsif publication.year %}{{ publication.year }} · Year only{% else %}Date not confirmed{% endif %} · {{ publication.venue | escape }} · {% if publication.type %}{{ publication.type | escape }}{% elsif publication.status == 'abstract' %}Conference abstract{% else %}{{ publication.status | replace: '-', ' ' | capitalize }}{% endif %}</p>
+          <a class="journey-publication-work__citation" href="{{ '/publishedwork/' | relative_url }}#{{ publication.id }}">Full citation</a>
+        </article>
       {% endfor %}
     </div>
   </details>

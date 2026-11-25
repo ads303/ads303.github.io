@@ -11,7 +11,7 @@
   accent: '#ffbf00'
   color_source: https://communicationsguide.ucdavis.edu/brand-guide/colors
 - id: washington
-  institution: UW
+  institution: University of Washington
   full_name: University of Washington
   start_year: 2020
   end_year: 2022
@@ -21,7 +21,7 @@
   accent: '#b7a57a'
   color_source: https://www.washington.edu/brand/brand-elements/colors/
 - id: pittsburgh
-  institution: Pittsburgh
+  institution: University of Pittsburgh
   full_name: University of Pittsburgh
   start_year: 2022
   end_year: 2026
