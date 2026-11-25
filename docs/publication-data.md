@@ -6,13 +6,13 @@
 
 - Give every work a stable, unique `id` (also its citation anchor).
 - Set `status` to `published`, `preprint`, `in-press`, `abstract`, or `contribution`. Use `type` to identify datasets, dissertations, and other contributions; these are not presented as peer-reviewed articles. Pending manuscripts without a public preprint are not included.
-- `year` is the citation's bibliographic year. `date` is a quoted ISO date for the first online release of the listed version, with `date_source` pointing to the publisher, PubMed, or Crossref record. Keep `date: null` when a day/month has not been verified; never guess January 1 from a year-only record.
+- `year` is the citation's bibliographic year. `date` is a quoted ISO date for the first online release of the listed version, with `date_source` pointing to the publisher, PubMed, or Crossref record. Keep `date: null` when a day/month has not been verified; never substitute January 1 for an unverified month and day.
 - For a preprint that becomes a paper, update the same record. Retain `preprint_url` as an optional secondary link rather than adding a duplicate work. An accepted manuscript can be `in-press` with a null publication date and a link explicitly labeled as the earlier preprint.
 - `authors` is plain citation text; the template highlights `Sriram A` / `Sriram AD`. Use `et al.` explicitly for shortened author lists.
 - `image` and `image_alt` preserve existing journal-cover artwork. `cover_label` and optional `cover_subtitle` provide a typeset library cover when no original image exists. `short_title` is only the library caption; the bibliography always shows the full title.
 - Optional links: `pdf_url`, `resource_url` + `resource_label`, and `preprint_url`.
 
-The timeline shows one horizontal feature block per canonical work, including conference abstracts, datasets, and dissertations. Each block links to its details and represents a work, not its duration. Published versions replace preprints; previous versions are not additional works. In-press records without a final release date use a separately sourced `preprint_date`, labeled as the public preprint. Records without a verified month use an outlined year-only block; no month is invented. Three works currently retain year-only precision: the 2013 and 2014 AGU abstracts and the 2026 dissertation. The axis expands to include early contributions before the undergraduate timeline.
+The timeline shows one horizontal feature block per canonical work, including conference abstracts, datasets, and dissertations. Each block links to its details and represents a work, not its duration. Published versions replace preprints; previous versions are not additional works. In-press records without a final release date use a separately sourced `preprint_date`, labeled as the public preprint. Records without a verified month use an outlined block spanning the recorded year; no month is invented. Three works currently have no verified release month: the 2013 and 2014 AGU abstracts and the 2026 dissertation. The axis expands to include early contributions before the undergraduate timeline.
 
 ## Reconciliation on 2026-11-24
 
